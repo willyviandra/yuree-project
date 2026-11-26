@@ -68,7 +68,7 @@ export function WorkshopSection() {
     <section
       id="workshop"
       ref={sectionRef}
-      className="relative py-20 lg:py-28 bg-[#09090b] overflow-hidden"
+      className="relative py-20 lg:py-28 bg-[#343434] overflow-hidden"
     >
       {/* Background Architectural Grid with Subtle Parallax */}
       <div
@@ -77,18 +77,18 @@ export function WorkshopSection() {
           transform: `translate3d(0, ${bgParallax}px, 0)`,
         }}
       />
-      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-[#f2682c]/4 blur-[130px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-[#EEAA55]/4 blur-[130px] pointer-events-none rounded-full" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-white/10">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#f2682c]/10 border border-[#f2682c]/30 text-xs font-mono-num text-[#f2682c] uppercase tracking-wider mb-4">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[#EEAA55]/10 border border-[#EEAA55]/30 text-xs font-mono-num text-[#EEAA55] uppercase tracking-wider mb-4">
               <Factory className="w-3.5 h-3.5" />
               <span>Tentang Kami · Infrastruktur Manufaktur Skalabilitas Tinggi</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
-              Jaringan <span className="text-[#f2682c]">23 Workshop Aktif</span> Terintegrasi
+              Jaringan <span className="text-[#EEAA55]">23 Workshop Aktif</span> Terintegrasi
             </h2>
             <p className="mt-4 text-sm sm:text-base text-zinc-300 leading-relaxed">
               Dengan total kapasitas gabungan{" "}
@@ -100,19 +100,19 @@ export function WorkshopSection() {
 
           {/* Aggregate Snapshot Metrics */}
           <div className="grid grid-cols-3 gap-3 shrink-0">
-            <div className="p-3.5 rounded-xl bg-[#121216] border border-white/10 text-center">
+            <div className="p-3.5 rounded-xl bg-[#2b2b2b] border border-white/10 text-center">
               <div className="text-xs text-zinc-400">Total Unit</div>
-              <div className="text-xl font-bold font-mono-num text-[#f2682c]">
+              <div className="text-xl font-bold font-mono-num text-[#EEAA55]">
                 {workshopSummary.totalWorkshops}
               </div>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#121216] border border-white/10 text-center">
+            <div className="p-3.5 rounded-xl bg-[#2b2b2b] border border-white/10 text-center">
               <div className="text-xs text-zinc-400">Personel WS</div>
               <div className="text-xl font-bold font-mono-num text-white">
                 {workshopSummary.totalWorkers}
               </div>
             </div>
-            <div className="p-3.5 rounded-xl bg-[#121216] border border-white/10 text-center">
+            <div className="p-3.5 rounded-xl bg-[#2b2b2b] border border-white/10 text-center">
               <div className="text-xs text-zinc-400">Kapasitas/Bln</div>
               <div className="text-xl font-bold font-mono-num text-white">
                 {workshopSummary.totalCapacity}m
@@ -124,7 +124,7 @@ export function WorkshopSection() {
         {/* Filter Bar: Tabs & Search Input */}
         <div className="mt-8 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4">
           {/* Region Tabs */}
-          <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-xl bg-[#121216] border border-white/10">
+          <div className="flex flex-wrap items-center gap-2 p-1.5 rounded-xl bg-[#2b2b2b] border border-white/10">
             {regionTabs.map((tab) => {
               const isSelected = selectedRegion === tab.label;
               return (
@@ -133,7 +133,7 @@ export function WorkshopSection() {
                   onClick={() => setSelectedRegion(tab.label)}
                   className={`px-3.5 py-2 rounded-lg text-xs font-semibold transition-all duration-200 flex items-center gap-2 ${
                     isSelected
-                      ? "bg-[#f2682c] text-white shadow-md shadow-[#f2682c]/20"
+                      ? "bg-[#EEAA55] text-white shadow-md shadow-[#EEAA55]/20"
                       : "text-zinc-400 hover:text-white hover:bg-white/[0.04]"
                   }`}
                 >
@@ -160,7 +160,7 @@ export function WorkshopSection() {
               placeholder="Cari nama, kota, atau spesialisasi..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-[#121216] border border-white/10 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-[#f2682c] transition-colors"
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-[#2b2b2b] border border-white/10 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-[#EEAA55] transition-colors"
             />
             {searchQuery && (
               <button
@@ -185,16 +185,16 @@ export function WorkshopSection() {
               Pekerja: <strong className="text-white">{currentTotalWorkers} orang</strong>
             </span>
             <span>
-              Kapasitas Terfilter: <strong className="text-[#f2682c]">{currentTotalCapacity} m'/bln</strong>
+              Kapasitas Terfilter: <strong className="text-[#EEAA55]">{currentTotalCapacity} m'/bln</strong>
             </span>
           </div>
         </div>
 
         {/* Clean Corporate Table (NO Green Dummy Badges, NO AI Slop) */}
-        <div className="mt-4 rounded-2xl bg-[#121216] border border-white/10 overflow-hidden shadow-2xl">
+        <div className="mt-4 rounded-2xl bg-[#2b2b2b] border border-white/10 overflow-hidden shadow-2xl">
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs text-zinc-300 min-w-[700px]">
-              <thead className="bg-[#181820] text-zinc-400 uppercase tracking-wider text-[11px] font-mono-num border-b border-white/10">
+              <thead className="bg-[#3f3f3f] text-zinc-400 uppercase tracking-wider text-[11px] font-mono-num border-b border-white/10">
                 <tr>
                   <th scope="col" className="px-5 py-3.5 font-bold">
                     Kode WS
@@ -224,14 +224,14 @@ export function WorkshopSection() {
                   >
                     {/* Kode WS */}
                     <td className="px-5 py-4 whitespace-nowrap">
-                      <span className="font-mono-num font-bold text-xs text-[#f2682c] px-2.5 py-1 rounded bg-[#f2682c]/10 border border-[#f2682c]/30">
+                      <span className="font-mono-num font-bold text-xs text-[#EEAA55] px-2.5 py-1 rounded bg-[#EEAA55]/10 border border-[#EEAA55]/30">
                         {ws.code}
                       </span>
                     </td>
 
                     {/* Nama & Wilayah */}
                     <td className="px-5 py-4 whitespace-nowrap">
-                      <div className="font-semibold text-white group-hover:text-[#f2682c] transition-colors">
+                      <div className="font-semibold text-white group-hover:text-[#EEAA55] transition-colors">
                         {ws.name}
                       </div>
                       <div className="text-[11px] text-zinc-400 mt-0.5">
@@ -283,14 +283,14 @@ export function WorkshopSection() {
           </div>
 
           {/* Clean Corporate Footer Bar (No Green Pulse Dot) */}
-          <div className="p-4 bg-[#14141a] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
+          <div className="p-4 bg-[#2b2b2b] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
             <div className="flex items-center gap-2">
-              <span className="text-[#f2682c] font-bold">✓</span>
+              <span className="text-[#EEAA55] font-bold">✓</span>
               <span>Seluruh 23 workshop beroperasi penuh dengan alokasi manufaktur paralel tanpa antrean.</span>
             </div>
             <a
               href="/simulasi-biaya"
-              className="text-[#f2682c] hover:text-amber-400 font-semibold underline underline-offset-4 transition-colors"
+              className="text-[#EEAA55] hover:text-[#EEAA55] font-semibold underline underline-offset-4 transition-colors"
             >
               Simulasikan estimasi waktu pengerjaan proyek Anda &rarr;
             </a>
@@ -299,7 +299,7 @@ export function WorkshopSection() {
       </div>
 
       {/* Seamless Transition Gradient to Layanan (Services) Section */}
-      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#0c0c10] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#2b2b2b] to-transparent pointer-events-none" />
     </section>
   );
 }

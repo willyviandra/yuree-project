@@ -114,8 +114,8 @@ function PartnerChip({
       onClick={onSelect}
       className={`group/chip flex w-[16.5rem] shrink-0 items-center gap-4 rounded-2xl border px-5 py-4 transition-all duration-300 cursor-pointer ${
         isActive
-          ? "border-[#f2682c] bg-[#171413] shadow-[0_0_24px_rgba(242,104,44,0.22)] ring-1 ring-[#f2682c]/40"
-          : "border-white/10 bg-[#121216] hover:border-[#f2682c]/50 hover:bg-[#181820]"
+          ? "border-[#EEAA55] bg-[#2b2b2b] shadow-[0_0_24px_rgba(238,170,85,0.22)] ring-1 ring-[#EEAA55]/40"
+          : "border-white/10 bg-[#2b2b2b] hover:border-[#EEAA55]/50 hover:bg-[#3f3f3f]"
       }`}
     >
       <div className="flex size-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-white/10 bg-black/80">
@@ -132,7 +132,7 @@ function PartnerChip({
       <div className="min-w-0 flex-1">
         <h4
           className={`truncate font-display text-sm font-bold transition-colors ${
-            isActive ? "text-[#f2682c]" : "text-white group-hover/chip:text-[#f2682c]"
+            isActive ? "text-[#EEAA55]" : "text-white group-hover/chip:text-[#EEAA55]"
           }`}
         >
           {partner.name}
@@ -170,13 +170,13 @@ export function PartnersSection() {
     <section
       id="mitra"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-[#09090b] text-[#f4f4f5] overflow-hidden border-t border-white/5"
+      className="relative py-24 lg:py-32 bg-[#343434] text-[#F9F9F9] overflow-hidden border-t border-white/5"
     >
       {/* Clean ambient background glow drifts without complex animations */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-[10%] top-[-10%] h-[50vh] w-[50vh] rounded-full blur-[120px] bg-[#f2682c]/5" />
-        <div className="absolute right-[-10%] top-[20%] h-[50vh] w-[50vh] rounded-full blur-[130px] bg-[#f59e0b]/5" />
-        <div className="absolute bottom-[-15%] left-[30%] h-[45vh] w-[45vh] rounded-full blur-[120px] bg-[#f2682c]/4" />
+        <div className="absolute -left-[10%] top-[-10%] h-[50vh] w-[50vh] rounded-full blur-[120px] bg-[#EEAA55]/5" />
+        <div className="absolute right-[-10%] top-[20%] h-[50vh] w-[50vh] rounded-full blur-[130px] bg-[#EEAA55]/5" />
+        <div className="absolute bottom-[-15%] left-[30%] h-[45vh] w-[45vh] rounded-full blur-[120px] bg-[#EEAA55]/4" />
       </div>
 
       <div className="container relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,7 +203,7 @@ export function PartnersSection() {
 
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
             Dipercaya Berbagai{" "}
-            <em className="font-serif italic text-[#f2682c] not-italic">
+            <em className="font-serif italic text-[#EEAA55] not-italic">
               Mitra
             </em>{" "}
             dan Klien

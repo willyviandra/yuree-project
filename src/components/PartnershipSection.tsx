@@ -49,8 +49,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 // Feature benefit cards per segment (valueProps[] from data)
 function FeatureCard({ text }: { text: string }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition-colors hover:border-[#f2682c]/30">
-      <CircleCheck className="mb-5 w-6 h-6 text-[#f2682c]" />
+    <div className="rounded-2xl border border-white/10 bg-white/[0.05] p-5 transition-colors hover:border-[#EEAA55]/30">
+      <CircleCheck className="mb-5 w-6 h-6 text-[#EEAA55]" />
       <p className="text-sm font-bold leading-6 text-white/90">{text}</p>
     </div>
   );
@@ -105,14 +105,14 @@ export function PartnershipSection() {
       id="kemitraan"
       ref={sectionRef}
       className="relative overflow-hidden py-20 lg:py-28"
-      style={{ background: "#17110C" }}
+      style={{ background: "#343434" }}
     >
       {/* Radial gradient overlay top */}
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(242, 104, 44, 0.08), transparent 70%)",
+            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(238,170,85, 0.08), transparent 70%)",
         }}
       />
 
@@ -120,15 +120,15 @@ export function PartnershipSection() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
         <div
           className="absolute -left-[10%] top-[-15%] h-[55vh] w-[55vh] rounded-full blur-[110px]"
-          style={{ background: "rgba(242,104,44,0.10)", animation: "aurora-drift 18s ease-in-out infinite" }}
+          style={{ background: "rgba(238,170,85,0.10)", animation: "aurora-drift 18s ease-in-out infinite" }}
         />
         <div
           className="absolute right-[-12%] top-[10%] h-[50vh] w-[50vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(220,80,20,0.08)", animation: "aurora-drift 24s ease-in-out infinite", animationDelay: "-7s" }}
+          style={{ background: "rgba(238,170,85,0.08)", animation: "aurora-drift 24s ease-in-out infinite", animationDelay: "-7s" }}
         />
         <div
           className="absolute bottom-[-20%] left-[30%] h-[48vh] w-[48vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(251,146,60,0.06)", animation: "aurora-drift 20s ease-in-out infinite", animationDelay: "-14s" }}
+          style={{ background: "rgba(238,170,85,0.06)", animation: "aurora-drift 20s ease-in-out infinite", animationDelay: "-14s" }}
         />
       </div>
 
@@ -185,7 +185,7 @@ export function PartnershipSection() {
                   }`}
                   style={
                     isActive
-                      ? { background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)" }
+                      ? { background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)" }
                       : {}
                   }
                 >
@@ -209,8 +209,8 @@ export function PartnershipSection() {
           <div
             className="grid items-center gap-8 rounded-[1.75rem] border border-white/10 p-6 md:p-10 lg:grid-cols-[0.85fr_1fr] backdrop-blur-xl"
             style={{
-              background: "rgba(30,22,15,0.90)",
-              boxShadow: "0 28px 90px rgba(242,104,44,0.18), 0 0 0 1px rgba(242,104,44,0.06)",
+              background: "rgba(43,43,43,0.90)",
+              boxShadow: "0 28px 90px rgba(238,170,85,0.18), 0 0 0 1px rgba(238,170,85,0.06)",
             }}
           >
             {/* Left column */}
@@ -218,7 +218,7 @@ export function PartnershipSection() {
               {/* Orange pill badge */}
               <div
                 className="inline-flex rounded-full px-4 py-2 text-xs font-extrabold uppercase tracking-wide text-white"
-                style={{ background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)" }}
+                style={{ background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)" }}
               >
                 {activeSegment.badge}
               </div>
@@ -236,7 +236,7 @@ export function PartnershipSection() {
                 {stats.map((stat) => (
                   <div
                     key={stat.value}
-                    className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 transition-colors hover:border-[#f2682c]/40"
+                    className="rounded-2xl border border-white/10 bg-white/[0.06] p-4 transition-colors hover:border-[#EEAA55]/40"
                   >
                     <div className="font-extrabold text-2xl text-white">{stat.value}</div>
                     <div className="mt-1 text-xs font-bold uppercase leading-5 tracking-wide text-white/55">
@@ -255,7 +255,7 @@ export function PartnershipSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-7 py-3 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-0.5"
-                  style={{ background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)" }}
+                  style={{ background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)" }}
                 >
                   <WhatsAppIcon className="w-5 h-5" />
                   Ajukan Kemitraan

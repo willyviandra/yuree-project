@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#09090b",
+  themeColor: "#343434",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -86,7 +86,7 @@ export default function RootLayout({
       lang="id"
       className={`${plusJakartaSans.variable} ${inter.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
-      <body className="min-h-screen bg-[#09090b] text-[#f4f4f5] antialiased selection:bg-[#f59e0b] selection:text-black">
+      <body className="min-h-screen bg-[#343434] text-[#F9F9F9] antialiased selection:bg-[#EEAA55] selection:text-[#343434]">
         {children}
 
         {/* Floating Quick WhatsApp Action Button */}
@@ -96,16 +96,16 @@ export default function RootLayout({
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Konsultasi Cepat WhatsApp Yuree Project"
-            className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-3.5 py-2.5 rounded-full bg-[#121216]/95 hover:bg-[#181820] text-white border border-white/10 hover:border-[#f59e0b]/50 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 group"
+            className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-3.5 py-2.5 rounded-full bg-[#2b2b2b]/95 hover:bg-[#3f3f3f] text-[#F9F9F9] border border-[#F9F9F9]/15 hover:border-[#EEAA55]/60 shadow-2xl backdrop-blur-xl transition-all duration-300 hover:scale-105 group"
           >
-            <div className="w-7 h-7 rounded-full bg-[#25D366] flex items-center justify-center text-black shrink-0 shadow-md">
-              <MessageCircle className="w-4 h-4 fill-current text-white" />
+            <div className="w-7 h-7 rounded-full bg-[#EEAA55] flex items-center justify-center text-[#343434] shrink-0 shadow-md">
+              <MessageCircle className="w-4 h-4 fill-current text-[#343434]" />
             </div>
             <div className="hidden sm:flex flex-col text-left pr-1">
-              <span className="text-[9.5px] font-mono-num text-zinc-400 leading-tight">
+              <span className="text-[9.5px] font-mono-num text-[#F9F9F9]/70 leading-tight">
                 Hotline WhatsApp
               </span>
-              <span className="text-xs font-bold text-white group-hover:text-[#f59e0b] transition-colors leading-tight">
+              <span className="text-xs font-bold text-[#F9F9F9] group-hover:text-[#EEAA55] transition-colors leading-tight">
                 Konsultasi Project
               </span>
             </div>

@@ -193,7 +193,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
       id="kontak"
       ref={sectionRef}
       className="relative py-20 lg:py-28 overflow-hidden scroll-mt-20"
-      style={{ background: "#17110C" }}
+      style={{ background: "#343434" }}
     >
       {/* Target anchor for contact */}
       <div id="contact" className="absolute -top-24" />
@@ -203,7 +203,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(242, 104, 44, 0.08), transparent 70%)",
+            "radial-gradient(ellipse 80% 55% at 50% 0%, rgba(238,170,85, 0.08), transparent 70%)",
         }}
       />
 
@@ -211,15 +211,15 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
         <div
           className="absolute -left-[10%] top-[-15%] h-[55vh] w-[55vh] rounded-full blur-[110px]"
-          style={{ background: "rgba(242,104,44,0.10)", animation: "aurora-drift 18s ease-in-out infinite" }}
+          style={{ background: "rgba(238,170,85,0.10)", animation: "aurora-drift 18s ease-in-out infinite" }}
         />
         <div
           className="absolute right-[-12%] top-[10%] h-[50vh] w-[50vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(220,80,20,0.08)", animation: "aurora-drift 24s ease-in-out infinite", animationDelay: "-7s" }}
+          style={{ background: "rgba(238,170,85,0.08)", animation: "aurora-drift 24s ease-in-out infinite", animationDelay: "-7s" }}
         />
         <div
           className="absolute bottom-[-20%] left-[30%] h-[48vh] w-[48vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(251,146,60,0.06)", animation: "aurora-drift 20s ease-in-out infinite", animationDelay: "-14s" }}
+          style={{ background: "rgba(238,170,85,0.06)", animation: "aurora-drift 20s ease-in-out infinite", animationDelay: "-14s" }}
         />
       </div>
 
@@ -248,7 +248,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
 
           <h2 className="text-[2rem] font-extrabold leading-[1.08] tracking-tight md:text-[3rem] lg:text-[3.4rem] text-white">
             Mulai Project Interior Anda Bersama{" "}
-            <em className="italic text-[#f2682c] font-serif not-italic">
+            <em className="italic text-[#EEAA55] font-serif not-italic">
               Yuree Project
             </em>
           </h2>
@@ -279,7 +279,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             onSubmit={handleFormSubmit}
             className="rounded-3xl p-6 md:p-8 border shadow-2xl flex flex-col justify-between"
             style={{
-              background: "rgba(26,20,15,0.95)",
+              background: "rgba(43,43,43,0.95)",
               borderColor: "rgba(255,255,255,0.10)",
             }}
           >
@@ -292,7 +292,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   placeholder="Nama Anda"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#f2682c] focus:ring-2 focus:ring-[#f2682c]/30"
+                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#EEAA55] focus:ring-2 focus:ring-[#EEAA55]/30"
                   style={{
                     background: "rgba(0,0,0,0.50)",
                     borderColor: "rgba(255,255,255,0.12)",
@@ -309,7 +309,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   placeholder="08xx xxxx xxxx"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#f2682c] focus:ring-2 focus:ring-[#f2682c]/30"
+                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#EEAA55] focus:ring-2 focus:ring-[#EEAA55]/30"
                   style={{
                     background: "rgba(0,0,0,0.50)",
                     borderColor: "rgba(255,255,255,0.12)",
@@ -323,18 +323,18 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   <select
                     value={category}
                     onChange={(e) => setCategory(e.target.value)}
-                    className="h-12 w-full rounded-2xl border px-4 pr-10 text-sm text-white shadow-sm outline-none transition focus:border-[#f2682c] focus:ring-2 focus:ring-[#f2682c]/30 cursor-pointer appearance-none"
+                    className="h-12 w-full rounded-2xl border px-4 pr-10 text-sm text-white shadow-sm outline-none transition focus:border-[#EEAA55] focus:ring-2 focus:ring-[#EEAA55]/30 cursor-pointer appearance-none"
                     style={{
                       background: "rgba(0,0,0,0.50)",
                       borderColor: "rgba(255,255,255,0.12)",
                     }}
                   >
-                    <option value="Kitchen Set" className="bg-[#121216] text-white">Kitchen Set</option>
-                    <option value="Bedroom" className="bg-[#121216] text-white">Bedroom</option>
-                    <option value="Living Room" className="bg-[#121216] text-white">Living Room / Backdrop TV</option>
-                    <option value="Wardrobe" className="bg-[#121216] text-white">Wardrobe / Lemari</option>
-                    <option value="Bawah Tangga" className="bg-[#121216] text-white">Area Bawah Tangga</option>
-                    <option value="Kemitraan Arsitek / Agensi" className="bg-[#121216] text-white">Kemitraan Arsitek / Agensi</option>
+                    <option value="Kitchen Set" className="bg-[#2b2b2b] text-white">Kitchen Set</option>
+                    <option value="Bedroom" className="bg-[#2b2b2b] text-white">Bedroom</option>
+                    <option value="Living Room" className="bg-[#2b2b2b] text-white">Living Room / Backdrop TV</option>
+                    <option value="Wardrobe" className="bg-[#2b2b2b] text-white">Wardrobe / Lemari</option>
+                    <option value="Bawah Tangga" className="bg-[#2b2b2b] text-white">Area Bawah Tangga</option>
+                    <option value="Kemitraan Arsitek / Agensi" className="bg-[#2b2b2b] text-white">Kemitraan Arsitek / Agensi</option>
                   </select>
                   <div className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400">
                     ▼
@@ -349,7 +349,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   placeholder="Kota / area project"
                   value={location}
                   onChange={(e) => setLocation(e.target.value)}
-                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#f2682c] focus:ring-2 focus:ring-[#f2682c]/30"
+                  className="flex h-12 w-full rounded-2xl border px-4 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#EEAA55] focus:ring-2 focus:ring-[#EEAA55]/30"
                   style={{
                     background: "rgba(0,0,0,0.50)",
                     borderColor: "rgba(255,255,255,0.12)",
@@ -364,7 +364,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   placeholder="Ceritakan kebutuhan interior atau kemitraan Anda"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="flex min-h-32 w-full rounded-2xl border px-4 py-3 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#f2682c] focus:ring-2 focus:ring-[#f2682c]/30"
+                  className="flex min-h-32 w-full rounded-2xl border px-4 py-3 text-sm text-white shadow-sm outline-none transition placeholder:text-zinc-500 focus:border-[#EEAA55] focus:ring-2 focus:ring-[#EEAA55]/30"
                   style={{
                     background: "rgba(0,0,0,0.50)",
                     borderColor: "rgba(255,255,255,0.12)",
@@ -377,8 +377,8 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               type="submit"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-bold transition-all duration-300 text-white shadow-glow hover:-translate-y-0.5 h-12 px-7 mt-6 w-full cursor-pointer"
               style={{
-                background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)",
-                boxShadow: "0 4px 20px rgba(242,104,44,0.30)",
+                background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)",
+                boxShadow: "0 4px 20px rgba(238,170,85,0.30)",
               }}
             >
               <WhatsAppIcon className="size-5" />
@@ -390,9 +390,9 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
           <aside
             className="rounded-[1.75rem] border p-6 text-white backdrop-blur-xl md:p-8 flex flex-col justify-between"
             style={{
-              background: "rgba(30,22,15,0.90)",
+              background: "rgba(43,43,43,0.90)",
               borderColor: "rgba(255,255,255,0.10)",
-              boxShadow: "0 28px 90px rgba(242,104,44,0.16), 0 0 0 1px rgba(242,104,44,0.05)",
+              boxShadow: "0 28px 90px rgba(238,170,85,0.16), 0 0 0 1px rgba(238,170,85,0.05)",
             }}
           >
             <div>
@@ -408,7 +408,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <PhoneIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <PhoneIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 text-sm leading-7 text-white/75">
                     <span className="block font-bold text-white">WhatsApp Official</span>
                     <span className="break-words font-mono-num">{brand.officialWA.display}</span>
@@ -423,7 +423,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <InstagramIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <InstagramIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 text-sm leading-7 text-white/75">
                     <span className="block font-bold text-white">Instagram</span>
                     <span className="break-words font-mono-num">
@@ -440,7 +440,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <FacebookIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <FacebookIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 text-sm leading-7 text-white/75">
                     <span className="block font-bold text-white">Facebook</span>
                     <span className="break-words font-mono-num">{brand.facebook?.name || "Yuree Project dan 1 lainnya"}</span>
@@ -455,7 +455,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <ThreadsIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <ThreadsIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 text-sm leading-7 text-white/75">
                     <span className="block font-bold text-white">Threads</span>
                     <span className="break-words font-mono-num">{brand.threads?.handle || "yuree.project"}</span>
@@ -468,7 +468,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <MailIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <MailIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 break-words text-sm leading-7 text-white/75">
                     {brand.email}
                   </span>
@@ -482,7 +482,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   className="flex min-w-0 gap-4 rounded-2xl p-5 transition hover:bg-white/15"
                   style={{ background: "rgba(255,255,255,0.08)" }}
                 >
-                  <MapPinIcon className="mt-0.5 size-5 shrink-0 text-[#f2682c]" />
+                  <MapPinIcon className="mt-0.5 size-5 shrink-0 text-[#EEAA55]" />
                   <span className="min-w-0 break-words text-sm leading-7 text-white/75">
                     {brand.address}
                   </span>

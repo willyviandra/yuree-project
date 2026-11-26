@@ -143,8 +143,8 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-        ? "bg-[#09090b]/95 backdrop-blur-2xl border-b border-white/[0.06] shadow-2xl py-3"
-        : "bg-gradient-to-b from-[#09090b]/90 via-[#09090b]/50 to-transparent py-4 lg:py-5"
+        ? "bg-[#343434]/95 backdrop-blur-2xl border-b border-white/[0.06] shadow-2xl py-3"
+        : "bg-gradient-to-b from-[#343434]/90 via-[#343434]/50 to-transparent py-4 lg:py-5"
         }`}
     >
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,7 +155,7 @@ export function Navbar() {
             onClick={() => setActiveSection("home")}
             className="flex items-center gap-3 group shrink-0"
           >
-            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-white/15 bg-black flex items-center justify-center transition-all duration-300 group-hover:border-[#f59e0b]/60 group-hover:scale-105 shadow-md">
+            <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-xl overflow-hidden border border-white/15 bg-black flex items-center justify-center transition-all duration-300 group-hover:border-[#EEAA55]/60 group-hover:scale-105 shadow-md">
               <Image
                 src="/images/logo.jpg"
                 alt="Yuree Project Logo"
@@ -170,7 +170,7 @@ export function Navbar() {
                 <span className="font-extrabold text-base sm:text-lg tracking-wider text-white">
                   YUREE
                 </span>
-                <span className="font-extrabold text-base sm:text-lg tracking-wider text-[#f59e0b]">
+                <span className="font-extrabold text-base sm:text-lg tracking-wider text-[#EEAA55]">
                   PROJECT
                 </span>
               </div>
@@ -192,15 +192,15 @@ export function Navbar() {
                       href={resolveHref(item.href)}
                       onClick={() => setActiveSection(item.id)}
                       className={`px-4 py-1.5 text-[13px] font-bold rounded-full transition-all duration-200 border ${isActive
-                        ? "bg-[#f2682c]/20 text-[#f2682c] border-[#f2682c] shadow-md shadow-[#f2682c]/20"
-                        : "bg-[#f2682c]/15 text-[#f2682c] border-[#f2682c]/30 hover:bg-[#f2682c]/25 hover:border-[#f2682c]/50"
+                        ? "bg-[#EEAA55]/20 text-[#EEAA55] border-[#EEAA55] shadow-md shadow-[#EEAA55]/20"
+                        : "bg-[#EEAA55]/15 text-[#EEAA55] border-[#EEAA55]/30 hover:bg-[#EEAA55]/25 hover:border-[#EEAA55]/50"
                         }`}
                     >
                       {item.name}
                     </a>
                     {/* Active Bold Line Underneath Pill */}
                     {isActive && (
-                      <span className="absolute -bottom-2.5 inset-x-3.5 h-[3px] bg-[#f2682c] rounded-full shadow-[0_0_10px_rgba(242,104,44,0.9)]" />
+                      <span className="absolute -bottom-2.5 inset-x-3.5 h-[3px] bg-[#EEAA55] rounded-full shadow-[0_0_10px_rgba(238,170,85,0.9)]" />
                     )}
                   </div>
                 );
@@ -228,12 +228,12 @@ export function Navbar() {
 
                     {/* Active Orange Line Spanning the Exact Width of the Text */}
                     {isActive && (
-                      <span className="absolute -bottom-2 inset-x-3.5 h-[3px] bg-[#f2682c] rounded-full shadow-[0_0_10px_rgba(242,104,44,0.9)]" />
+                      <span className="absolute -bottom-2 inset-x-3.5 h-[3px] bg-[#EEAA55] rounded-full shadow-[0_0_10px_rgba(238,170,85,0.9)]" />
                     )}
 
                     {/* Floating Dropdown Card */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                      <div className="w-64 p-2 rounded-2xl bg-[#121216]/95 backdrop-blur-2xl border border-white/10 shadow-2xl flex flex-col gap-1">
+                      <div className="w-64 p-2 rounded-2xl bg-[#2b2b2b]/95 backdrop-blur-2xl border border-white/10 shadow-2xl flex flex-col gap-1">
                         {item.subItems.map((sub, sIdx) => {
                           const IconComp = sub.icon;
                           return (
@@ -246,11 +246,11 @@ export function Navbar() {
                               }}
                               className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-white/[0.06] transition-colors group/sub"
                             >
-                              <div className="p-2 rounded-lg bg-white/[0.04] border border-white/10 text-[#f2682c] group-hover/sub:bg-[#f2682c]/10 transition-colors shrink-0">
+                              <div className="p-2 rounded-lg bg-white/[0.04] border border-white/10 text-[#EEAA55] group-hover/sub:bg-[#EEAA55]/10 transition-colors shrink-0">
                                 <IconComp className="w-4 h-4" />
                               </div>
                               <div className="flex flex-col text-left">
-                                <span className="text-xs font-bold text-white group-hover/sub:text-[#f2682c] transition-colors">
+                                <span className="text-xs font-bold text-white group-hover/sub:text-[#EEAA55] transition-colors">
                                   {sub.name}
                                 </span>
                                 <span className="text-[11px] text-zinc-400 mt-0.5">
@@ -281,7 +281,7 @@ export function Navbar() {
 
                   {/* Active Orange Line Spanning the Exact Width of the Text */}
                   {isActive && (
-                    <span className="absolute -bottom-2 inset-x-3.5 h-[3px] bg-[#f2682c] rounded-full shadow-[0_0_10px_rgba(242,104,44,0.9)]" />
+                    <span className="absolute -bottom-2 inset-x-3.5 h-[3px] bg-[#EEAA55] rounded-full shadow-[0_0_10px_rgba(238,170,85,0.9)]" />
                   )}
                 </div>
               );
@@ -298,12 +298,12 @@ export function Navbar() {
                     <a
                       href={resolveHref(item.href)}
                       onClick={() => setActiveSection(item.id)}
-                      className="px-3 py-1 text-xs font-bold rounded-full bg-[#f2682c]/15 text-[#f2682c] border border-[#f2682c]/30"
+                      className="px-3 py-1 text-xs font-bold rounded-full bg-[#EEAA55]/15 text-[#EEAA55] border border-[#EEAA55]/30"
                     >
                       {item.name}
                     </a>
                     {isActive && (
-                      <span className="absolute -bottom-2 inset-x-2.5 h-[2.5px] bg-[#f2682c] rounded-full shadow-[0_0_8px_rgba(242,104,44,0.9)]" />
+                      <span className="absolute -bottom-2 inset-x-2.5 h-[2.5px] bg-[#EEAA55] rounded-full shadow-[0_0_8px_rgba(238,170,85,0.9)]" />
                     )}
                   </div>
                 );
@@ -324,11 +324,11 @@ export function Navbar() {
                       <ChevronDown className="w-3 h-3 text-zinc-400 group-hover:rotate-180 transition-transform" />
                     </a>
                     {isActive && (
-                      <span className="absolute -bottom-1.5 inset-x-2.5 h-[2.5px] bg-[#f2682c] rounded-full shadow-[0_0_8px_rgba(242,104,44,0.9)]" />
+                      <span className="absolute -bottom-1.5 inset-x-2.5 h-[2.5px] bg-[#EEAA55] rounded-full shadow-[0_0_8px_rgba(238,170,85,0.9)]" />
                     )}
                     {/* Floating Dropdown Card */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
-                      <div className="w-60 p-2 rounded-2xl bg-[#121216]/95 backdrop-blur-2xl border border-white/10 shadow-2xl flex flex-col gap-1">
+                      <div className="w-60 p-2 rounded-2xl bg-[#2b2b2b]/95 backdrop-blur-2xl border border-white/10 shadow-2xl flex flex-col gap-1">
                         {item.subItems.map((sub, sIdx) => (
                           <a
                             key={sIdx}
@@ -359,7 +359,7 @@ export function Navbar() {
                     <span className="whitespace-nowrap">{item.name}</span>
                   </a>
                   {isActive && (
-                    <span className="absolute -bottom-1.5 inset-x-2.5 h-[2.5px] bg-[#f2682c] rounded-full shadow-[0_0_8px_rgba(242,104,44,0.9)]" />
+                    <span className="absolute -bottom-1.5 inset-x-2.5 h-[2.5px] bg-[#EEAA55] rounded-full shadow-[0_0_8px_rgba(238,170,85,0.9)]" />
                   )}
                 </div>
               );
@@ -371,7 +371,7 @@ export function Navbar() {
             <a
               href={resolveHref("#kontak")}
               onClick={() => setActiveSection("kontak")}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#f59e0b] hover:bg-[#d97706] text-black text-xs sm:text-[13px] font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#f59e0b]/20 hover:scale-[1.02]"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#EEAA55] hover:bg-[#d99640] text-black text-xs sm:text-[13px] font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#EEAA55]/20 hover:scale-[1.02]"
             >
               <span>Konsultasi Sekarang</span>
               <ArrowUpRight className="w-4 h-4" />
@@ -391,7 +391,7 @@ export function Navbar() {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-full bg-[#09090b]/98 backdrop-blur-2xl border-b border-white/10 shadow-2xl px-6 py-6 transition-all duration-300 max-h-[calc(100vh-80px)] overflow-y-auto">
+        <div className="lg:hidden fixed inset-x-0 top-full bg-[#343434]/98 backdrop-blur-2xl border-b border-white/10 shadow-2xl px-6 py-6 transition-all duration-300 max-h-[calc(100vh-80px)] overflow-y-auto">
           <div className="flex flex-col gap-1.5">
             {navLinks.map((item) => {
               const isActive = currentActive === item.id;
@@ -406,7 +406,7 @@ export function Navbar() {
                         setMobileMenuOpen(false);
                       }}
                       className={`px-4 py-3 text-sm font-medium rounded-xl transition-all flex items-center justify-between ${isActive
-                        ? "text-white bg-white/[0.08] border-l-4 border-[#f2682c] font-bold"
+                        ? "text-white bg-white/[0.08] border-l-4 border-[#EEAA55] font-bold"
                         : "text-zinc-300 hover:text-white hover:bg-white/[0.04]"
                         }`}
                     >
@@ -429,7 +429,7 @@ export function Navbar() {
                             }}
                             className="px-3 py-2 text-xs text-zinc-400 hover:text-white flex items-center gap-2 rounded-lg hover:bg-white/[0.04] transition-colors"
                           >
-                            <IconC className="w-3.5 h-3.5 text-[#f2682c]" />
+                            <IconC className="w-3.5 h-3.5 text-[#EEAA55]" />
                             <span>{sub.name}</span>
                           </a>
                         );
@@ -448,9 +448,9 @@ export function Navbar() {
                     setMobileMenuOpen(false);
                   }}
                   className={`px-4 py-3 text-sm font-medium rounded-xl transition-all flex items-center justify-between ${item.isPill
-                    ? "text-[#f2682c] bg-[#f2682c]/15 border border-[#f2682c]/30 font-bold"
+                    ? "text-[#EEAA55] bg-[#EEAA55]/15 border border-[#EEAA55]/30 font-bold"
                     : isActive
-                      ? "text-white bg-white/[0.08] border-l-4 border-[#f2682c] font-bold"
+                      ? "text-white bg-white/[0.08] border-l-4 border-[#EEAA55] font-bold"
                       : "text-zinc-300 hover:text-white hover:bg-white/[0.04]"
                     }`}
                 >
@@ -458,7 +458,7 @@ export function Navbar() {
                     <span>{item.name}</span>
                   </span>
                   <ArrowUpRight
-                    className={`w-4 h-4 ${item.isPill || isActive ? "text-[#f2682c]" : "text-zinc-500"
+                    className={`w-4 h-4 ${item.isPill || isActive ? "text-[#EEAA55]" : "text-zinc-500"
                       }`}
                   />
                 </a>
@@ -473,7 +473,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 bg-white/[0.03] text-xs font-mono-num text-zinc-200"
             >
-              <Phone className="w-4 h-4 text-[#f59e0b]" />
+              <Phone className="w-4 h-4 text-[#EEAA55]" />
               <span>Hotline: {companyData.brand.officialWA.display}</span>
             </a>
             <a
@@ -482,7 +482,7 @@ export function Navbar() {
                 setActiveSection("kontak");
                 setMobileMenuOpen(false);
               }}
-              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#f59e0b] text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-[#f59e0b]/20"
+              className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-[#EEAA55] text-black font-extrabold text-xs uppercase tracking-wider shadow-xl shadow-[#EEAA55]/20"
             >
               <MessageSquare className="w-4 h-4" />
               <span>Konsultasi Sekarang</span>

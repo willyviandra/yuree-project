@@ -48,21 +48,21 @@ export function WorkflowSection() {
     <section
       id="alur-kerja"
       ref={sectionRef}
-      className="relative py-20 lg:py-28 bg-[#09090b] overflow-hidden scroll-mt-20 border-t border-white/5"
+      className="relative py-20 lg:py-28 bg-[#343434] overflow-hidden scroll-mt-20 border-t border-white/5"
     >
       {/* Aurora Ambient Drift Background */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
         <div
           className="absolute -left-[10%] top-[-15%] h-[55vh] w-[55vh] rounded-full blur-[110px]"
-          style={{ background: "rgba(242,104,44,0.08)" }}
+          style={{ background: "rgba(238,170,85,0.08)" }}
         />
         <div
           className="absolute right-[-12%] top-[10%] h-[50vh] w-[50vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(245,158,11,0.06)" }}
+          style={{ background: "rgba(238,170,85,0.06)" }}
         />
         <div
           className="absolute bottom-[-20%] left-[30%] h-[48vh] w-[48vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(242,104,44,0.05)" }}
+          style={{ background: "rgba(238,170,85,0.05)" }}
         />
       </div>
 
@@ -91,7 +91,7 @@ export function WorkflowSection() {
 
           <h2 className="text-[2rem] font-extrabold leading-[1.08] tracking-tight md:text-[3rem] lg:text-[3.4rem] text-white">
             Alur Kerja{" "}
-            <em className="italic text-[#f2682c] font-serif not-italic">
+            <em className="italic text-[#EEAA55] font-serif not-italic">
               Project
             </em>
           </h2>
@@ -113,7 +113,7 @@ export function WorkflowSection() {
           className="sticky top-24 z-30 mx-auto mt-10 flex max-w-md items-center gap-4 rounded-full border px-5 py-3 shadow-2xl backdrop-blur-xl"
           style={{
             borderColor: "rgba(255,255,255,0.12)",
-            background: "rgba(18,18,22,0.85)",
+            background: "rgba(43,43,43,0.85)",
             boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
           }}
         >
@@ -125,11 +125,11 @@ export function WorkflowSection() {
               className="absolute inset-0 rounded-full transition-all duration-300"
               style={{
                 width: `${scrollProgress}%`,
-                background: "linear-gradient(90deg, #f2682c, #f59e0b)",
+                background: "linear-gradient(90deg, #EEAA55, #EEAA55)",
               }}
             />
           </div>
-          <span className="w-12 text-right font-extrabold text-base text-[#f2682c] font-mono-num">
+          <span className="w-12 text-right font-extrabold text-base text-[#EEAA55] font-mono-num">
             {scrollProgress}%
           </span>
         </div>
@@ -139,7 +139,7 @@ export function WorkflowSection() {
           {/* Vertical timeline line */}
           <div
             className="absolute left-[26px] top-0 bottom-0 w-px lg:left-1/2 lg:-translate-x-px"
-            style={{ background: "linear-gradient(to bottom, rgba(242,104,44,0.3), rgba(245,158,11,0.1), transparent)" }}
+            style={{ background: "linear-gradient(to bottom, rgba(238,170,85,0.3), rgba(238,170,85,0.1), transparent)" }}
           />
 
           {workflowSteps.map((step, idx) => {
@@ -153,11 +153,11 @@ export function WorkflowSection() {
                 {/* Center Pin */}
                 <div className="absolute left-[26px] top-1 z-20 -translate-x-1/2 lg:left-1/2">
                   <span
-                    className="relative flex size-10 items-center justify-center rounded-full border-2 ring-4 ring-[#09090b] font-mono-num text-sm font-bold"
+                    className="relative flex size-10 items-center justify-center rounded-full border-2 ring-4 ring-[#343434] font-mono-num text-sm font-bold"
                     style={{
-                      background: "#18130e",
-                      borderColor: "rgba(242,104,44,0.50)",
-                      color: "#f2682c",
+                      background: "#2b2b2b",
+                      borderColor: "rgba(238,170,85,0.50)",
+                      color: "#EEAA55",
                     }}
                   >
                     {step.step}
@@ -173,20 +173,20 @@ export function WorkflowSection() {
                   }`}
                 >
                   <div
-                    className="group w-full rounded-2xl border p-5 text-left transition-all duration-300 hover:border-[#f2682c]/40"
+                    className="group w-full rounded-2xl border p-5 text-left transition-all duration-300 hover:border-[#EEAA55]/40"
                     style={{
-                      background: "rgba(18,18,22,0.75)",
+                      background: "rgba(43,43,43,0.75)",
                       borderColor: "rgba(255,255,255,0.08)",
                       backdropFilter: "blur(12px)",
                     }}
                   >
                     {/* Step Number & Title Row */}
                     <div className={`flex items-start gap-4 ${!isEven ? "lg:flex-row-reverse lg:text-right" : ""}`}>
-                      <span className="text-3xl font-semibold italic leading-none text-[#f2682c]/80 font-serif shrink-0">
+                      <span className="text-3xl font-semibold italic leading-none text-[#EEAA55]/80 font-serif shrink-0">
                         {step.step}
                       </span>
                       <div className="flex-1 min-w-0">
-                        <h3 className="text-base font-bold text-white tracking-tight group-hover:text-[#f59e0b] transition-colors leading-snug">
+                        <h3 className="text-base font-bold text-white tracking-tight group-hover:text-[#EEAA55] transition-colors leading-snug">
                           {step.title}
                         </h3>
                         <p className="mt-1.5 text-sm leading-relaxed text-zinc-400">

@@ -96,7 +96,7 @@ export function PortfolioSection() {
     <section
       id="portfolio"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 bg-[#09090b] text-[#f4f4f5] overflow-hidden"
+      className="relative py-24 lg:py-32 bg-[#343434] text-[#F9F9F9] overflow-hidden"
     >
       {/* Background Aurora / Ambient Glow Drift (Smooth Parallax) */}
       <div
@@ -107,9 +107,9 @@ export function PortfolioSection() {
           transition: "transform 0.1s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
-        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[130px] bg-[#f2682c]/6" />
-        <div className="absolute right-[-10%] top-[30%] h-[50vh] w-[50vh] rounded-full blur-[140px] bg-[#f59e0b]/5" />
-        <div className="absolute bottom-[-15%] left-[30%] h-[48vh] w-[48vh] rounded-full blur-[130px] bg-[#f2682c]/4" />
+        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[130px] bg-[#EEAA55]/6" />
+        <div className="absolute right-[-10%] top-[30%] h-[50vh] w-[50vh] rounded-full blur-[140px] bg-[#EEAA55]/5" />
+        <div className="absolute bottom-[-15%] left-[30%] h-[48vh] w-[48vh] rounded-full blur-[130px] bg-[#EEAA55]/4" />
       </div>
 
       {/* Subtle Architectural Grid Pattern */}
@@ -125,7 +125,7 @@ export function PortfolioSection() {
         >
           {/* Eyebrow Tag */}
           <div className="flex justify-center">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f2682c]/10 border border-[#f2682c]/25 text-xs font-semibold text-[#f2682c] tracking-wide mb-4 shadow-sm shadow-[#f2682c]/10">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EEAA55]/10 border border-[#EEAA55]/25 text-xs font-semibold text-[#EEAA55] tracking-wide mb-4 shadow-sm shadow-[#EEAA55]/10">
               <Sparkles className="w-3.5 h-3.5" />
               <span>Galeri Hasil Kerja · {portfolio.length} Proyek Aktif</span>
             </div>
@@ -134,7 +134,7 @@ export function PortfolioSection() {
           {/* Heading */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.08] text-white">
             Portfolio Interior Custom{" "}
-            <span className="font-serif italic font-normal text-[#f2682c]">
+            <span className="font-serif italic font-normal text-[#EEAA55]">
               Yuree Project
             </span>
           </h2>
@@ -162,8 +162,8 @@ export function PortfolioSection() {
                     onClick={() => setSelectedCategory(cat.label)}
                     className={`flex items-center gap-2 rounded-full border px-4 sm:px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 cursor-pointer ${
                       isActive
-                        ? "border-transparent bg-gradient-to-r from-[#f2682c] to-[#f59e0b] text-white shadow-[0_0_22px_rgba(242,104,44,0.32)] scale-[1.02]"
-                        : "border-white/10 bg-[#121216] text-zinc-400 hover:border-[#f2682c]/40 hover:text-white hover:bg-[#181820]"
+                        ? "border-transparent bg-gradient-to-r from-[#EEAA55] to-[#EEAA55] text-white shadow-[0_0_22px_rgba(238,170,85,0.32)] scale-[1.02]"
+                        : "border-white/10 bg-[#2b2b2b] text-zinc-400 hover:border-[#EEAA55]/40 hover:text-white hover:bg-[#3f3f3f]"
                     }`}
                   >
                     <span>{cat.label}</span>
@@ -192,7 +192,7 @@ export function PortfolioSection() {
             <div
               key={item.id}
               onClick={() => openModal(item)}
-              className="group relative cursor-pointer overflow-hidden rounded-[1.4rem] border border-white/10 bg-[#121216] shadow-xl transition-all duration-500 hover:border-[#f2682c]/50 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#f2682c]/10"
+              className="group relative cursor-pointer overflow-hidden rounded-[1.4rem] border border-white/10 bg-[#2b2b2b] shadow-xl transition-all duration-500 hover:border-[#EEAA55]/50 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#EEAA55]/10"
             >
               {/* Image Frame with Aspect 4/3 */}
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/40">
@@ -211,8 +211,8 @@ export function PortfolioSection() {
                 {/* Top Floating Badges */}
                 <div className="absolute inset-x-3.5 top-3.5 flex items-start justify-between gap-2 z-10">
                   {/* Left: Category Badge (White Translucent Glass) */}
-                  <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-white/20 bg-white/95 px-2.5 py-1 text-[0.625rem] font-bold uppercase tracking-wide text-[#f2682c] backdrop-blur shadow-sm">
-                    <span className="size-1.5 shrink-0 rounded-full bg-[#f2682c]" />
+                  <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full border border-white/20 bg-white/95 px-2.5 py-1 text-[0.625rem] font-bold uppercase tracking-wide text-[#EEAA55] backdrop-blur shadow-sm">
+                    <span className="size-1.5 shrink-0 rounded-full bg-[#EEAA55]" />
                     {item.category}
                   </span>
 
@@ -230,14 +230,14 @@ export function PortfolioSection() {
                 </div>
 
                 {/* Bottom Right: Floating Eye Icon Button on Hover */}
-                <div className="absolute bottom-4 right-4 inline-flex size-11 translate-y-2 items-center justify-center rounded-full bg-gradient-to-r from-[#f2682c] to-[#f59e0b] text-white opacity-0 shadow-lg shadow-[#f2682c]/40 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 z-10">
+                <div className="absolute bottom-4 right-4 inline-flex size-11 translate-y-2 items-center justify-center rounded-full bg-gradient-to-r from-[#EEAA55] to-[#EEAA55] text-white opacity-0 shadow-lg shadow-[#EEAA55]/40 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 z-10">
                   <Eye className="size-5" />
                 </div>
               </div>
 
               {/* Card Body: Title & Description only (matching menujukeindahan.id/#portfolio) */}
               <div className="p-5">
-                <h3 className="font-serif text-xl font-bold text-white group-hover:text-[#f2682c] transition-colors">
+                <h3 className="font-serif text-xl font-bold text-white group-hover:text-[#EEAA55] transition-colors">
                   {item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-zinc-400">
@@ -258,10 +258,10 @@ export function PortfolioSection() {
         <div className="mt-14 text-center">
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-[#f2682c]/40 text-xs sm:text-sm font-bold text-zinc-200 hover:text-white uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-[1.02]"
+            className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-[#EEAA55]/40 text-xs sm:text-sm font-bold text-zinc-200 hover:text-white uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-[1.02]"
           >
             <span>Buka Galeri Lengkap {portfolio.length} Proyek Portofolio</span>
-            <ArrowRight className="w-4 h-4 text-[#f2682c]" />
+            <ArrowRight className="w-4 h-4 text-[#EEAA55]" />
           </Link>
         </div>
       </div>
@@ -276,13 +276,13 @@ export function PortfolioSection() {
         >
           {/* Modal Container */}
           <div
-            className="relative w-full max-w-5xl rounded-2xl bg-[#121216] border border-white/15 shadow-2xl overflow-hidden flex flex-col max-h-[92vh]"
+            className="relative w-full max-w-5xl rounded-2xl bg-[#2b2b2b] border border-white/15 shadow-2xl overflow-hidden flex flex-col max-h-[92vh]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#16161c]">
+            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-[#2b2b2b]">
               <div className="flex items-center gap-3">
-                <span className="px-2.5 py-1 rounded-full bg-[#f2682c]/15 text-[#f2682c] text-xs font-mono-num font-bold border border-[#f2682c]/30">
+                <span className="px-2.5 py-1 rounded-full bg-[#EEAA55]/15 text-[#EEAA55] text-xs font-mono-num font-bold border border-[#EEAA55]/30">
                   {activeModalItem.category}
                 </span>
                 <h3 className="text-base sm:text-lg font-bold text-white">
@@ -345,7 +345,7 @@ export function PortfolioSection() {
             </div>
 
             {/* Modal Footer: Caption, Specs & Actions */}
-            <div className="p-6 bg-[#16161c] border-t border-white/10 overflow-y-auto">
+            <div className="p-6 bg-[#2b2b2b] border-t border-white/10 overflow-y-auto">
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
                 {activeModalItem.images[currentImageIndex]?.caption || activeModalItem.description}
               </p>
@@ -362,7 +362,7 @@ export function PortfolioSection() {
                 </div>
                 <div className="p-3 rounded-xl bg-white/[0.03] border border-white/10">
                   <div className="text-zinc-500 text-[10px] uppercase">Material & Finishing</div>
-                  <div className="text-[#f2682c] font-semibold mt-0.5 truncate" title={activeModalItem.finishing}>
+                  <div className="text-[#EEAA55] font-semibold mt-0.5 truncate" title={activeModalItem.finishing}>
                     {activeModalItem.finishing}
                   </div>
                 </div>
@@ -375,7 +375,7 @@ export function PortfolioSection() {
                   onClick={closeModal}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-xs font-semibold text-zinc-200 hover:text-white transition-colors"
                 >
-                  <Calculator className="w-4 h-4 text-[#f2682c]" />
+                  <Calculator className="w-4 h-4 text-[#EEAA55]" />
                   <span>Hitung Biaya Proyek Ini</span>
                 </a>
 
@@ -385,7 +385,7 @@ export function PortfolioSection() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#f2682c] hover:bg-[#d9561e] text-white text-xs font-bold uppercase tracking-wider transition-all shadow-lg shadow-[#f2682c]/20 hover:scale-[1.02]"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#EEAA55] hover:bg-[#d99640] text-white text-xs font-bold uppercase tracking-wider transition-all shadow-lg shadow-[#EEAA55]/20 hover:scale-[1.02]"
                 >
                   <MessageSquare className="w-4 h-4" />
                   <span>Konsultasi Proyek Serupa</span>

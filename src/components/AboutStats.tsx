@@ -50,7 +50,7 @@ export function AboutStats() {
     <section
       id="tentang-kami"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 overflow-hidden bg-[#09090b]"
+      className="relative py-24 lg:py-32 overflow-hidden bg-[#343434]"
     >
       {/* Background Aurora / Ambient Glow with Smooth Parallax Drift */}
       <div
@@ -61,9 +61,9 @@ export function AboutStats() {
           transition: "transform 0.1s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
-        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[120px] bg-[#f2682c]/6" />
-        <div className="absolute right-[-10%] top-[20%] h-[50vh] w-[50vh] rounded-full blur-[130px] bg-[#f59e0b]/5" />
-        <div className="absolute bottom-[-15%] left-[25%] h-[48vh] w-[48vh] rounded-full blur-[120px] bg-[#f2682c]/4" />
+        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[120px] bg-[#EEAA55]/6" />
+        <div className="absolute right-[-10%] top-[20%] h-[50vh] w-[50vh] rounded-full blur-[130px] bg-[#EEAA55]/5" />
+        <div className="absolute bottom-[-15%] left-[25%] h-[48vh] w-[48vh] rounded-full blur-[120px] bg-[#EEAA55]/4" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
@@ -72,7 +72,7 @@ export function AboutStats() {
           <div className="relative">
             {/* Top-left decorative accent frame with subtle drift */}
             <div
-              className="absolute -left-4 -top-4 hidden size-24 rounded-[2rem] border-[6px] border-[#f2682c]/20 lg:block transition-transform duration-500 will-change-transform"
+              className="absolute -left-4 -top-4 hidden size-24 rounded-[2rem] border-[6px] border-[#EEAA55]/20 lg:block transition-transform duration-500 will-change-transform"
               style={{
                 transform: `translate3d(0, ${badgeTranslateY * 0.5}px, 0)`,
               }}
@@ -80,7 +80,7 @@ export function AboutStats() {
 
             {/* Main Image Container with Parallax Translation */}
             <div
-              className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl bg-[#121216] transition-transform duration-300 will-change-transform"
+              className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-2xl bg-[#2b2b2b] transition-transform duration-300 will-change-transform"
               style={{
                 transform: `translate3d(0, ${imageTranslateY}px, 0)`,
               }}
@@ -95,18 +95,18 @@ export function AboutStats() {
                   priority
                 />
                 {/* Subtle architectural vignette gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#09090b]/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#343434]/60 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
 
             {/* Floating Established Badge with Counter-Parallax Float */}
             <div
-              className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-[#121216]/95 backdrop-blur-md p-5 shadow-2xl sm:block transition-transform duration-300 will-change-transform"
+              className="absolute -bottom-6 -right-4 hidden rounded-2xl border border-white/10 bg-[#2b2b2b]/95 backdrop-blur-md p-5 shadow-2xl sm:block transition-transform duration-300 will-change-transform"
               style={{
                 transform: `translate3d(0, ${badgeTranslateY}px, 0)`,
               }}
             >
-              <div className="text-3xl font-extrabold font-mono-num text-[#f2682c]">
+              <div className="text-3xl font-extrabold font-mono-num text-[#EEAA55]">
                 2018
               </div>
               <div className="mt-1 text-xs font-bold uppercase tracking-wider text-zinc-400">
@@ -119,13 +119,13 @@ export function AboutStats() {
           <div>
             <div className="max-w-2xl text-left">
               {/* Category Tag */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f2682c]/10 border border-[#f2682c]/25 text-xs font-semibold text-[#f2682c] tracking-wide mb-4">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EEAA55]/10 border border-[#EEAA55]/25 text-xs font-semibold text-[#EEAA55] tracking-wide mb-4">
                 <span>Tentang Kami</span>
               </div>
 
               {/* Clean Title */}
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.12] text-white">
-                Tentang <span className="font-serif italic font-normal text-[#f2682c]">Yuree Project</span>
+                Tentang <span className="font-serif italic font-normal text-[#EEAA55]">Yuree Project</span>
               </h2>
 
               {/* Narrative Text */}
@@ -139,11 +139,11 @@ export function AboutStats() {
               {keyFeatures.map((feature, idx) => (
                 <div
                   key={idx}
-                  className={`flex items-center gap-3.5 rounded-2xl border border-white/10 bg-[#121216] p-4 shadow-sm hover:border-[#f2682c]/40 hover:-translate-y-0.5 transition-all duration-200 ${
+                  className={`flex items-center gap-3.5 rounded-2xl border border-white/10 bg-[#2b2b2b] p-4 shadow-sm hover:border-[#EEAA55]/40 hover:-translate-y-0.5 transition-all duration-200 ${
                     idx === keyFeatures.length - 1 ? "sm:col-span-2" : ""
                   }`}
                 >
-                  <CheckCircle2 className="w-5 h-5 shrink-0 text-[#f2682c]" />
+                  <CheckCircle2 className="w-5 h-5 shrink-0 text-[#EEAA55]" />
                   <span className="text-sm font-bold text-zinc-100">{feature}</span>
                 </div>
               ))}
@@ -153,7 +153,7 @@ export function AboutStats() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <a
                 href="#workshop"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#f2682c] hover:bg-[#d9561e] text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#f2682c]/20 hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#EEAA55] hover:bg-[#d99640] text-white text-xs sm:text-sm font-bold uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#EEAA55]/20 hover:scale-[1.02]"
               >
                 <span>Lihat 23 Jaringan Workshop</span>
                 <ArrowRight className="w-4 h-4" />
@@ -171,7 +171,7 @@ export function AboutStats() {
       </div>
 
       {/* Seamless Transition Gradient to 23 Workshop & Layanan */}
-      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#09090b] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-[#343434] to-transparent pointer-events-none" />
     </section>
   );
 }

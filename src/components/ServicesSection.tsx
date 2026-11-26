@@ -121,7 +121,7 @@ export function ServicesSection() {
     <section
       id="layanan"
       ref={sectionRef}
-      className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-[#18130e] via-[#1c1611] to-[#14100c] text-[#f4f4f5]"
+      className="relative py-24 lg:py-32 overflow-hidden bg-gradient-to-b from-[#2b2b2b] via-[#2b2b2b] to-[#2b2b2b] text-[#F9F9F9]"
     >
       {/* Warm Ambient Logo-Inspired Glows (Non-Black Branded Theme) */}
       <div
@@ -132,9 +132,9 @@ export function ServicesSection() {
           transition: "transform 0.1s cubic-bezier(0.16, 1, 0.3, 1)",
         }}
       >
-        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[130px] bg-[#f2682c]/8" />
-        <div className="absolute right-[-10%] top-[25%] h-[50vh] w-[50vh] rounded-full blur-[140px] bg-[#f59e0b]/7" />
-        <div className="absolute bottom-[-15%] left-[25%] h-[48vh] w-[48vh] rounded-full blur-[130px] bg-[#f2682c]/6" />
+        <div className="absolute -left-[10%] top-[-10%] h-[55vh] w-[55vh] rounded-full blur-[130px] bg-[#EEAA55]/8" />
+        <div className="absolute right-[-10%] top-[25%] h-[50vh] w-[50vh] rounded-full blur-[140px] bg-[#EEAA55]/7" />
+        <div className="absolute bottom-[-15%] left-[25%] h-[48vh] w-[48vh] rounded-full blur-[130px] bg-[#EEAA55]/6" />
       </div>
 
       {/* Subtle Architectural Grid with Counter-Parallax Drift */}
@@ -146,10 +146,10 @@ export function ServicesSection() {
       />
 
       {/* Radial Warm Brand Halo from Top */}
-      <div className="absolute inset-x-0 top-0 h-96 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(242,104,44,0.18),transparent)] pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-96 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(238,170,85,0.18),transparent)] pointer-events-none" />
 
       {/* Top Accent Gradient Border */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#f2682c]/40 to-transparent pointer-events-none" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#EEAA55]/40 to-transparent pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         {/* Hero Section Layanan with Smooth Parallax Drift */}
@@ -160,14 +160,14 @@ export function ServicesSection() {
           }}
         >
           {/* Category Tag */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#f2682c]/15 border border-[#f2682c]/30 text-xs font-semibold text-[#f2682c] tracking-wide mb-4 shadow-sm shadow-[#f2682c]/10">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EEAA55]/15 border border-[#EEAA55]/30 text-xs font-semibold text-[#EEAA55] tracking-wide mb-4 shadow-sm shadow-[#EEAA55]/10">
             <span>Spesialisasi Fabrikasi & Eksekusi</span>
           </div>
 
           {/* Heading Styled Exactly like menujukeindahan.id */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.1] text-white">
             Layanan Interior Custom{" "}
-            <span className="font-serif italic font-normal text-[#f2682c]">
+            <span className="font-serif italic font-normal text-[#EEAA55]">
               Yuree Project
             </span>
           </h2>
@@ -194,25 +194,25 @@ export function ServicesSection() {
                 key={idx}
                 className={item.isWide ? "sm:col-span-2 lg:col-span-2" : "sm:col-span-1 lg:col-span-1"}
               >
-                <article className="group relative h-full flex flex-col justify-between overflow-hidden rounded-[1.4rem] border border-[#f2682c]/20 bg-[#221b15]/90 p-7 sm:p-8 shadow-xl backdrop-blur-md transition-all duration-500 hover:border-[#f2682c]/60 hover:bg-[#281f18] hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#f2682c]/10">
+                <article className="group relative h-full flex flex-col justify-between overflow-hidden rounded-[1.4rem] border border-[#EEAA55]/20 bg-[#2f2f2f]/90 p-7 sm:p-8 shadow-xl backdrop-blur-md transition-all duration-500 hover:border-[#EEAA55]/60 hover:bg-[#3a3a3a] hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#EEAA55]/10">
                   {/* Top Bar Gradient Reveal on Hover */}
-                  <div className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-[#f2682c] to-[#f59e0b] transition-transform duration-500 group-hover:scale-x-100" />
+                  <div className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-[#EEAA55] to-[#EEAA55] transition-transform duration-500 group-hover:scale-x-100" />
 
                   {/* Card Content Top */}
                   <div>
                     {/* Header: Icon & Big Number (01, 02, etc.) */}
                     <div className="flex items-start justify-between gap-6">
-                      <div className="inline-flex size-12 items-center justify-center rounded-2xl bg-[#f2682c]/15 text-[#f2682c] transition-all duration-500 group-hover:bg-[#f2682c] group-hover:text-white group-hover:shadow-lg group-hover:shadow-[#f2682c]/30">
+                      <div className="inline-flex size-12 items-center justify-center rounded-2xl bg-[#EEAA55]/15 text-[#EEAA55] transition-all duration-500 group-hover:bg-[#EEAA55] group-hover:text-white group-hover:shadow-lg group-hover:shadow-[#EEAA55]/30">
                         <IconComponent className="size-6" />
                       </div>
 
-                      <span className="font-display text-3xl font-bold italic font-mono-num text-white/20 transition-colors duration-500 group-hover:text-[#f2682c]/40">
+                      <span className="font-display text-3xl font-bold italic font-mono-num text-white/20 transition-colors duration-500 group-hover:text-[#EEAA55]/40">
                         {item.num}
                       </span>
                     </div>
 
                     {/* Title & Description */}
-                    <h3 className="mt-8 font-display text-xl sm:text-2xl font-bold text-white group-hover:text-[#f2682c] transition-colors">
+                    <h3 className="mt-8 font-display text-xl sm:text-2xl font-bold text-white group-hover:text-[#EEAA55] transition-colors">
                       {item.title}
                     </h3>
                     <p className="mt-3 text-sm leading-relaxed text-zinc-300">
@@ -224,7 +224,7 @@ export function ServicesSection() {
                       {item.pills.map((pill, pIdx) => (
                         <span
                           key={pIdx}
-                          className="rounded-full bg-[#2e231b] border border-[#f2682c]/15 px-3 py-1 text-xs font-semibold text-zinc-300 transition-colors group-hover:border-[#f2682c]/30 group-hover:text-zinc-200"
+                          className="rounded-full bg-[#3f3f3f] border border-[#EEAA55]/15 px-3 py-1 text-xs font-semibold text-zinc-300 transition-colors group-hover:border-[#EEAA55]/30 group-hover:text-zinc-200"
                         >
                           {pill}
                         </span>
@@ -236,7 +236,7 @@ export function ServicesSection() {
                   <div className="mt-8 pt-4 flex items-center justify-between border-t border-white/5">
                     <a
                       href="/simulasi-biaya"
-                      className="text-xs font-semibold text-zinc-400 group-hover:text-[#f2682c] transition-colors flex items-center gap-1.5"
+                      className="text-xs font-semibold text-zinc-400 group-hover:text-[#EEAA55] transition-colors flex items-center gap-1.5"
                     >
                       <span>Simulasikan Biaya {item.title}</span>
                       <ArrowRight className="w-3.5 h-3.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
@@ -245,7 +245,7 @@ export function ServicesSection() {
                     <a
                       href={item.href}
                       aria-label={`Lihat portofolio ${item.title}`}
-                      className="inline-flex size-10 items-center justify-center rounded-full border border-[#f2682c]/30 text-[#f2682c] transition-all duration-500 group-hover:border-[#f2682c] group-hover:bg-[#f2682c] group-hover:text-white group-hover:scale-105"
+                      className="inline-flex size-10 items-center justify-center rounded-full border border-[#EEAA55]/30 text-[#EEAA55] transition-all duration-500 group-hover:border-[#EEAA55] group-hover:bg-[#EEAA55] group-hover:text-white group-hover:scale-105"
                     >
                       <ArrowUpRight className="size-4 transition-transform duration-500 group-hover:rotate-45" />
                     </a>
@@ -258,7 +258,7 @@ export function ServicesSection() {
       </div>
 
       {/* Seamless Transition Gradient to Portfolio */}
-      <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-[#09090b] to-transparent pointer-events-none" />
+      <div className="absolute bottom-0 inset-x-0 h-28 bg-gradient-to-t from-[#343434] to-transparent pointer-events-none" />
     </section>
   );
 }

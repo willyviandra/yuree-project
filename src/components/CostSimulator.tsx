@@ -773,26 +773,26 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
     <section
       id="simulasi-biaya"
       ref={sectionRef}
-      className={`relative ${isStandalone ? "py-4 sm:py-6" : "py-16 lg:py-24"} bg-[#09090b] text-[#f4f4f5] overflow-hidden`}
+      className={`relative ${isStandalone ? "py-4 sm:py-6" : "py-16 lg:py-24"} bg-[#343434] text-[#F9F9F9] overflow-hidden`}
     >
       {/* Ambient warm orange glow matching brand logo */}
       <div
         className="absolute top-0 left-1/4 -translate-x-1/2 -top-40 w-[600px] h-[600px] rounded-full pointer-events-none opacity-40"
-        style={{ background: "rgba(242,104,44,0.12)", filter: "blur(140px)" }}
+        style={{ background: "rgba(238,170,85,0.12)", filter: "blur(140px)" }}
         aria-hidden="true"
       />
       <div
         className="absolute top-[520px] right-0 translate-x-1/3 w-[520px] h-[520px] rounded-full pointer-events-none opacity-30"
-        style={{ background: "rgba(245,158,11,0.08)", filter: "blur(130px)" }}
+        style={{ background: "rgba(238,170,85,0.08)", filter: "blur(130px)" }}
         aria-hidden="true"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Save success toast alert */}
         {saveSuccessNotice && (
-          <div className="mb-4 p-3.5 rounded-xl bg-[#f2682c]/20 border border-[#f2682c]/50 text-white text-xs font-semibold flex items-center justify-between shadow-lg backdrop-blur-md animate-fade-in">
+          <div className="mb-4 p-3.5 rounded-xl bg-[#EEAA55]/20 border border-[#EEAA55]/50 text-white text-xs font-semibold flex items-center justify-between shadow-lg backdrop-blur-md animate-fade-in">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#f2682c]" />
+              <CheckCircle2 className="w-4 h-4 text-[#EEAA55]" />
               <span>{saveSuccessNotice}</span>
             </div>
             <button
@@ -812,26 +812,26 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(20px)",
             transition: "opacity 0.6s ease, transform 0.6s ease",
-            background: "linear-gradient(145deg, #18130e 0%, #14100c 50%, #0d0a08 100%)",
-            border: "1px solid rgba(242,104,44,0.35)",
-            boxShadow: "0 20px 60px rgba(242,104,44,0.10), 0 0 0 1px rgba(242,104,44,0.15)",
+            background: "linear-gradient(145deg, #2b2b2b 0%, #2b2b2b 50%, #2b2b2b 100%)",
+            border: "1px solid rgba(238,170,85,0.35)",
+            boxShadow: "0 20px 60px rgba(238,170,85,0.10), 0 0 0 1px rgba(238,170,85,0.15)",
           }}
         >
           {/* Top badges bar */}
           <div
             className="flex flex-wrap items-center justify-between gap-3 pb-5"
-            style={{ borderBottom: "1px solid rgba(242,104,44,0.20)" }}
+            style={{ borderBottom: "1px solid rgba(238,170,85,0.20)" }}
           >
             <div className="flex flex-wrap items-center gap-2.5">
               <div
                 className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border shadow-sm"
                 style={{
-                  background: "rgba(242,104,44,0.15)",
-                  borderColor: "rgba(242,104,44,0.40)",
-                  color: "#f59e0b",
+                  background: "rgba(238,170,85,0.15)",
+                  borderColor: "rgba(238,170,85,0.40)",
+                  color: "#EEAA55",
                 }}
               >
-                <Sparkles className="w-3.5 h-3.5 text-[#f2682c]" />
+                <Sparkles className="w-3.5 h-3.5 text-[#EEAA55]" />
                 <span>Kalkulator Biaya Custom Transparan</span>
               </div>
               <div
@@ -839,10 +839,10 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                 style={{
                   background: "rgba(255,255,255,0.06)",
                   borderColor: "rgba(255,255,255,0.12)",
-                  color: "#e4e4e7",
+                  color: "#F9F9F9",
                 }}
               >
-                <span className="w-2 h-2 rounded-full bg-[#f2682c] animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-[#EEAA55] animate-pulse" />
                 <span>Harga Terbaru - 13.31</span>
               </div>
             </div>
@@ -865,10 +865,10 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <div className="flex items-center gap-2 text-xs font-bold text-white">
-                    <Building2 className="w-4 h-4 text-[#f2682c]" />
+                    <Building2 className="w-4 h-4 text-[#EEAA55]" />
                     <span>Identitas Akun &amp; Klien:</span>
                   </div>
-                  <span className="text-[11px] text-[#f59e0b] font-medium">
+                  <span className="text-[11px] text-[#EEAA55] font-medium">
                     Tampil di Ekspor JPG / PDF
                   </span>
                 </div>
@@ -876,7 +876,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div className="sm:col-span-2">
                     <label className="flex items-center gap-1.5 text-[11px] font-semibold text-zinc-300 mb-1">
-                      <User className="w-3 h-3 text-[#f2682c]" />
+                      <User className="w-3 h-3 text-[#EEAA55]" />
                       <span>Nama Akun / Mitra:</span>
                     </label>
                     <input
@@ -884,14 +884,14 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       placeholder="Masukkan nama akun / studio mitra..."
                       value={accountName}
                       onChange={(e) => setAccountName(e.target.value)}
-                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#f2682c] transition-colors"
+                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#EEAA55] transition-colors"
                       style={{ borderColor: "rgba(255,255,255,0.15)" }}
                     />
                   </div>
 
                   <div>
                     <label className="flex items-center gap-1.5 text-[11px] font-semibold text-zinc-300 mb-1">
-                      <User className="w-3 h-3 text-[#f2682c]" />
+                      <User className="w-3 h-3 text-[#EEAA55]" />
                       <span>Nama Client:</span>
                     </label>
                     <input
@@ -899,14 +899,14 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       placeholder="Nama pemilik proyek..."
                       value={clientName}
                       onChange={(e) => setClientName(e.target.value)}
-                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#f2682c] transition-colors"
+                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#EEAA55] transition-colors"
                       style={{ borderColor: "rgba(255,255,255,0.15)" }}
                     />
                   </div>
 
                   <div>
                     <label className="flex items-center gap-1.5 text-[11px] font-semibold text-zinc-300 mb-1">
-                      <MapPin className="w-3 h-3 text-[#f2682c]" />
+                      <MapPin className="w-3 h-3 text-[#EEAA55]" />
                       <span>Alamat Client:</span>
                     </label>
                     <input
@@ -914,7 +914,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       placeholder="Contoh: Jl. Dago Atas No. 88..."
                       value={clientAddress}
                       onChange={(e) => setClientAddress(e.target.value)}
-                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#f2682c] transition-colors"
+                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white placeholder:text-zinc-500 text-xs focus:outline-none focus:border-[#EEAA55] transition-colors"
                       style={{ borderColor: "rgba(255,255,255,0.15)" }}
                     />
                   </div>
@@ -932,7 +932,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             >
               <div>
                 <div className="flex items-center gap-2 text-xs font-bold text-white mb-3">
-                  <MapPin className="w-4 h-4 text-[#f2682c]" />
+                  <MapPin className="w-4 h-4 text-[#EEAA55]" />
                   <span>Pilih Area Pemasangan:</span>
                 </div>
 
@@ -949,11 +949,11 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                         const firstCity = LOCATION_OPTIONS[newProv]?.cities[0] || "Kota Bandung";
                         setSelectedCity(firstCity);
                       }}
-                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white text-xs focus:outline-none focus:border-[#f2682c] cursor-pointer"
+                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white text-xs focus:outline-none focus:border-[#EEAA55] cursor-pointer"
                       style={{ borderColor: "rgba(255,255,255,0.15)" }}
                     >
                       {Object.keys(LOCATION_OPTIONS).map((prov) => (
-                        <option key={prov} value={prov} className="bg-[#121216] text-white">
+                        <option key={prov} value={prov} className="bg-[#2b2b2b] text-white">
                           {prov}
                         </option>
                       ))}
@@ -967,11 +967,11 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                     <select
                       value={selectedCity}
                       onChange={(e) => setSelectedCity(e.target.value)}
-                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white text-xs focus:outline-none focus:border-[#f2682c] cursor-pointer"
+                      className="w-full h-9 px-3 rounded-xl border bg-black/60 text-white text-xs focus:outline-none focus:border-[#EEAA55] cursor-pointer"
                       style={{ borderColor: "rgba(255,255,255,0.15)" }}
                     >
                       {(LOCATION_OPTIONS[selectedProvince]?.cities || []).map((city) => (
-                        <option key={city} value={city} className="bg-[#121216] text-white">
+                        <option key={city} value={city} className="bg-[#2b2b2b] text-white">
                           {city}
                         </option>
                       ))}
@@ -989,7 +989,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
           {/* ── 5 Category Tabs inside Card ────────────────────────────────────── */}
           <div
             className="mt-6 pt-5 flex flex-wrap gap-2 sm:gap-2.5"
-            style={{ borderTop: "1px solid rgba(242,104,44,0.20)" }}
+            style={{ borderTop: "1px solid rgba(238,170,85,0.20)" }}
           >
             {CATEGORIES.map((cat) => {
               const isActive = activeCategoryId === cat.id;
@@ -1007,13 +1007,13 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   style={
                     isActive
                       ? {
-                          background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)",
-                          boxShadow: "0 4px 20px rgba(242,104,44,0.35)",
+                          background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)",
+                          boxShadow: "0 4px 20px rgba(238,170,85,0.35)",
                         }
                       : {}
                   }
                 >
-                  <IconC className={`w-4 h-4 shrink-0 ${isActive ? "text-black" : "text-[#f2682c]"}`} />
+                  <IconC className={`w-4 h-4 shrink-0 ${isActive ? "text-black" : "text-[#EEAA55]"}`} />
                   <span>{cat.label}</span>
                 </button>
               );
@@ -1035,13 +1035,13 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             {/* Action Bar: Pilihan Komponen Title + History + Reset */}
             <div className="flex items-center justify-between flex-wrap gap-3 pb-2">
               <h3 className="text-xl font-bold text-white tracking-tight">
-                Pilihan Komponen: <span className="text-[#f59e0b]">{activeCategory.label}</span>
+                Pilihan Komponen: <span className="text-[#EEAA55]">{activeCategory.label}</span>
               </h3>
               <div className="flex items-center gap-3">
                 <button
                   type="button"
                   onClick={() => setHistoryModalOpen(true)}
-                  className="text-xs text-[#f2682c] hover:text-[#fbbf24] inline-flex items-center gap-1.5 font-bold transition-colors cursor-pointer"
+                  className="text-xs text-[#EEAA55] hover:text-[#EEAA55] inline-flex items-center gap-1.5 font-bold transition-colors cursor-pointer"
                 >
                   <History className="w-3.5 h-3.5" />
                   <span>Riwayat ({savedSimulations.length})</span>
@@ -1069,12 +1069,12 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                     className="rounded-2xl border transition-all duration-200"
                     style={{
                       background: st.checked
-                        ? "rgba(242,104,44,0.08)"
-                        : "rgba(18,18,22,0.60)",
+                        ? "rgba(238,170,85,0.08)"
+                        : "rgba(43,43,43,0.60)",
                       borderColor: st.checked
-                        ? "rgba(242,104,44,0.40)"
+                        ? "rgba(238,170,85,0.40)"
                         : "rgba(255,255,255,0.08)",
-                      boxShadow: st.checked ? "0 4px 20px rgba(242,104,44,0.08)" : "none",
+                      boxShadow: st.checked ? "0 4px 20px rgba(238,170,85,0.08)" : "none",
                     }}
                   >
                     <div className="p-4 sm:p-5 flex items-start sm:items-center justify-between gap-4">
@@ -1085,7 +1085,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                             checked={st.checked}
                             onChange={(e) => setChecked(comp.id, e.target.checked)}
                             className="w-5 h-5 rounded-md cursor-pointer"
-                            style={{ accentColor: "#f2682c" }}
+                            style={{ accentColor: "#EEAA55" }}
                           />
                         </div>
                         <div>
@@ -1127,7 +1127,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                               className="w-16 px-2 py-1 text-right rounded-lg text-white text-xs font-bold focus:outline-none"
                               style={{
                                 background: "rgba(0,0,0,0.60)",
-                                border: "1px solid rgba(242,104,44,0.50)",
+                                border: "1px solid rgba(238,170,85,0.50)",
                               }}
                             />
                             <span className="text-xs text-zinc-400">{comp.unit}</span>
@@ -1137,7 +1137,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                           <div className="text-xs text-zinc-500">Subtotal</div>
                           <div
                             className={`text-sm sm:text-base font-bold ${
-                              st.checked ? "text-[#f59e0b]" : "text-zinc-600"
+                              st.checked ? "text-[#EEAA55]" : "text-zinc-600"
                             }`}
                           >
                             {st.checked ? formatRp(sub) : "Rp 0"}
@@ -1159,12 +1159,12 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                           className="w-full h-2 rounded-lg appearance-none cursor-pointer"
                           style={{
                             background: "rgba(255,255,255,0.12)",
-                            accentColor: "#f2682c",
+                            accentColor: "#EEAA55",
                           }}
                         />
                         <div className="flex justify-between text-[11px] font-mono-num text-zinc-400 mt-1">
                           <span>Min: {comp.minDim}</span>
-                          <span className="text-[#f2682c] font-bold">
+                          <span className="text-[#EEAA55] font-bold">
                             Ukuran Dipilih: {st.dim} {comp.unit}
                           </span>
                           <span>Max: {comp.maxDim}</span>
@@ -1180,8 +1180,8 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             <div
               className="rounded-2xl overflow-hidden border transition-all"
               style={{
-                background: "rgba(18,18,22,0.70)",
-                borderColor: "rgba(242,104,44,0.25)",
+                background: "rgba(43,43,43,0.70)",
+                borderColor: "rgba(238,170,85,0.25)",
               }}
             >
               <button
@@ -1191,11 +1191,11 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               >
                 <div>
                   <h4 className="text-sm sm:text-base font-bold text-white flex items-center gap-2 flex-wrap">
-                    <span className="flex size-6 items-center justify-center rounded-md bg-[#f2682c]/15 text-[#f2682c]">
+                    <span className="flex size-6 items-center justify-center rounded-md bg-[#EEAA55]/15 text-[#EEAA55]">
                       <Flame className="size-3.5" />
                     </span>
                     <span>Peralatan Elektronik &amp; Kitchen Appliances</span>
-                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#f2682c]/15 text-[#f59e0b] border border-[#f2682c]/30">
+                    <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-[#EEAA55]/15 text-[#EEAA55] border border-[#EEAA55]/30">
                       Kompor, Hood, Sink, Paket Hemat
                     </span>
                   </h4>
@@ -1221,8 +1221,8 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                         key={app.id}
                         className="flex items-center justify-between gap-3 p-3.5 rounded-xl border cursor-pointer transition-colors"
                         style={{
-                          background: isChecked ? "rgba(242,104,44,0.10)" : "rgba(0,0,0,0.30)",
-                          borderColor: isChecked ? "rgba(242,104,44,0.40)" : "rgba(255,255,255,0.06)",
+                          background: isChecked ? "rgba(238,170,85,0.10)" : "rgba(0,0,0,0.30)",
+                          borderColor: isChecked ? "rgba(238,170,85,0.40)" : "rgba(255,255,255,0.06)",
                         }}
                       >
                         <div className="flex items-center gap-3">
@@ -1236,7 +1236,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                               }))
                             }
                             className="w-4 h-4 rounded cursor-pointer"
-                            style={{ accentColor: "#f2682c" }}
+                            style={{ accentColor: "#EEAA55" }}
                           />
                           <div>
                             <div className="text-xs sm:text-sm font-bold text-white">
@@ -1248,7 +1248,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                           </div>
                         </div>
                         <div className="text-right shrink-0">
-                          <span className="text-xs sm:text-sm font-bold text-[#f59e0b]">
+                          <span className="text-xs sm:text-sm font-bold text-[#EEAA55]">
                             {formatRp(app.price)}
                           </span>
                         </div>
@@ -1263,7 +1263,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             <div
               className="rounded-2xl overflow-hidden border transition-all"
               style={{
-                background: "rgba(18,18,22,0.70)",
+                background: "rgba(43,43,43,0.70)",
                 borderColor: "rgba(255,255,255,0.10)",
               }}
             >
@@ -1298,11 +1298,11 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       className="p-4 rounded-xl border space-y-3"
                       style={{
                         background: "rgba(0,0,0,0.40)",
-                        borderColor: "rgba(242,104,44,0.30)",
+                        borderColor: "rgba(238,170,85,0.30)",
                       }}
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-[#f59e0b] uppercase">
+                        <span className="text-xs font-bold text-[#EEAA55] uppercase">
                           Item Aksesoris #{idx + 1}
                         </span>
                         <button
@@ -1325,7 +1325,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                             placeholder="Contoh: Rak Piring Tarik / Lampu LED Strip"
                             value={acc.name}
                             onChange={(e) => updateAccessory(acc.id, "name", e.target.value)}
-                            className="w-full text-xs font-medium rounded-xl border bg-black/60 px-3 py-2 text-white focus:border-[#f2682c] focus:outline-none"
+                            className="w-full text-xs font-medium rounded-xl border bg-black/60 px-3 py-2 text-white focus:border-[#EEAA55] focus:outline-none"
                             style={{ borderColor: "rgba(255,255,255,0.15)" }}
                           />
                         </div>
@@ -1341,7 +1341,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                             onChange={(e) =>
                               updateAccessory(acc.id, "price", parseFloat(e.target.value) || 0)
                             }
-                            className="w-full text-xs font-bold text-center rounded-xl border bg-black/60 px-3 py-2 text-white focus:border-[#f2682c] focus:outline-none"
+                            className="w-full text-xs font-bold text-center rounded-xl border bg-black/60 px-3 py-2 text-white focus:border-[#EEAA55] focus:outline-none"
                             style={{ borderColor: "rgba(255,255,255,0.15)" }}
                           />
                         </div>
@@ -1366,7 +1366,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                               onChange={(e) =>
                                 updateAccessory(acc.id, "qty", Math.max(1, parseInt(e.target.value) || 1))
                               }
-                              className="w-full text-center font-bold text-xs rounded-lg border bg-black/60 py-1.5 text-white focus:border-[#f2682c] focus:outline-none"
+                              className="w-full text-center font-bold text-xs rounded-lg border bg-black/60 py-1.5 text-white focus:border-[#EEAA55] focus:outline-none"
                               style={{ borderColor: "rgba(255,255,255,0.15)" }}
                             />
                             <button
@@ -1387,9 +1387,9 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                     onClick={addAccessoryRow}
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all border"
                     style={{
-                      background: "rgba(242,104,44,0.15)",
-                      borderColor: "rgba(242,104,44,0.35)",
-                      color: "#f59e0b",
+                      background: "rgba(238,170,85,0.15)",
+                      borderColor: "rgba(238,170,85,0.35)",
+                      color: "#EEAA55",
                     }}
                   >
                     <Plus className="w-3.5 h-3.5" />
@@ -1403,7 +1403,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             <div
               className="rounded-2xl overflow-hidden border"
               style={{
-                background: "rgba(18,18,22,0.50)",
+                background: "rgba(43,43,43,0.50)",
                 borderColor: "rgba(255,255,255,0.08)",
               }}
             >
@@ -1446,24 +1446,24 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
             <div
               className="relative overflow-hidden rounded-3xl p-6 sm:p-7 shadow-2xl"
               style={{
-                background: "linear-gradient(160deg, #18130e 0%, #120e0a 60%, #0d0a08 100%)",
-                border: "2px solid rgba(242,104,44,0.35)",
-                boxShadow: "0 16px 50px rgba(242,104,44,0.12)",
+                background: "linear-gradient(160deg, #2b2b2b 0%, #2b2b2b 60%, #2b2b2b 100%)",
+                border: "2px solid rgba(238,170,85,0.35)",
+                boxShadow: "0 16px 50px rgba(238,170,85,0.12)",
               }}
             >
               {/* Top orange gradient accent bar */}
               <div
                 className="absolute top-0 left-0 right-0 h-1.5"
-                style={{ background: "linear-gradient(90deg, #f2682c, #f59e0b, #fbbf24)" }}
+                style={{ background: "linear-gradient(90deg, #EEAA55, #EEAA55, #EEAA55)" }}
               />
 
               {/* Summary Header */}
               <div
                 className="flex items-center justify-between pb-4 mb-4"
-                style={{ borderBottom: "1px solid rgba(242,104,44,0.20)" }}
+                style={{ borderBottom: "1px solid rgba(238,170,85,0.20)" }}
               >
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#f2682c]">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#EEAA55]">
                     Ringkasan Estimasi
                   </span>
                   <h4 className="text-lg font-bold text-white mt-0.5">Total Perkiraan Biaya</h4>
@@ -1471,9 +1471,9 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                 <span
                   className="px-2.5 py-1 rounded-full text-xs font-semibold border"
                   style={{
-                    background: "rgba(242,104,44,0.15)",
-                    borderColor: "rgba(242,104,44,0.30)",
-                    color: "#f59e0b",
+                    background: "rgba(238,170,85,0.15)",
+                    borderColor: "rgba(238,170,85,0.30)",
+                    color: "#EEAA55",
                   }}
                 >
                   {selectedCity}
@@ -1485,7 +1485,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                 <div className="text-xs text-zinc-400 mb-1 font-medium">
                   Estimasi Total ({activeItems} Item Aktif):
                 </div>
-                <div className="text-3xl sm:text-4xl font-black tracking-tight text-[#f2682c] font-mono-num">
+                <div className="text-3xl sm:text-4xl font-black tracking-tight text-[#EEAA55] font-mono-num">
                   {formatRp(totalPrice)}
                 </div>
                 {surchargeAmount > 0 && (
@@ -1502,7 +1502,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               >
                 <div className="text-xs font-semibold text-white mb-3 flex items-center justify-between">
                   <span>Rincian Komponen Terpilih</span>
-                  <span className="text-[#f59e0b] font-bold">Subtotal</span>
+                  <span className="text-[#EEAA55] font-bold">Subtotal</span>
                 </div>
 
                 {breakdown.length === 0 ? (
@@ -1543,14 +1543,14 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               >
                 <div className="text-xs font-semibold text-zinc-300 mb-2 flex items-center justify-between">
                   <span className="flex items-center gap-1.5">
-                    <Download className="w-3.5 h-3.5 text-[#f2682c]" />
+                    <Download className="w-3.5 h-3.5 text-[#EEAA55]" />
                     <span>Dokumen &amp; Ekspor:</span>
                   </span>
                   <button
                     type="button"
                     onClick={saveToHistory}
                     disabled={activeItems === 0}
-                    className="text-[11px] font-bold text-[#f59e0b] hover:underline disabled:opacity-40 disabled:cursor-not-allowed"
+                    className="text-[11px] font-bold text-[#EEAA55] hover:underline disabled:opacity-40 disabled:cursor-not-allowed"
                   >
                     + Simpan ke Riwayat
                   </button>
@@ -1563,7 +1563,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   disabled={activeItems === 0}
                   className="w-full flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl font-bold text-xs transition-all border border-white/15 bg-white/5 hover:bg-white/10 text-white disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                 >
-                  <Eye className="w-4 h-4 text-[#f2682c]" />
+                  <Eye className="w-4 h-4 text-[#EEAA55]" />
                   <span>Live Preview Dokumen (RAB / Surat Penawaran)</span>
                 </button>
 
@@ -1575,16 +1575,16 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                     disabled={activeItems === 0}
                     className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-white/10 bg-black/40 hover:bg-white/5 text-zinc-300 hover:text-white text-xs font-semibold transition-all disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                   >
-                    <FileImage className="w-3.5 h-3.5 text-[#f2682c]" />
+                    <FileImage className="w-3.5 h-3.5 text-[#EEAA55]" />
                     <span>Format JPG</span>
                   </button>
                   <button
                     type="button"
                     onClick={() => setPreviewModalOpen(true)}
                     disabled={activeItems === 0}
-                    className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-[#f2682c]/40 bg-[#f2682c]/10 hover:bg-[#f2682c]/20 text-[#f59e0b] text-xs font-bold transition-all disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                    className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl border border-[#EEAA55]/40 bg-[#EEAA55]/10 hover:bg-[#EEAA55]/20 text-[#EEAA55] text-xs font-bold transition-all disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                   >
-                    <FileText className="w-3.5 h-3.5 text-[#f2682c]" />
+                    <FileText className="w-3.5 h-3.5 text-[#EEAA55]" />
                     <span>Format PDF</span>
                   </button>
                 </div>
@@ -1600,8 +1600,8 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                 href={waUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl font-extrabold text-xs uppercase tracking-wider text-black transition-all duration-300 hover:scale-[1.02] shadow-xl shadow-[#f2682c]/20 cursor-pointer"
-                style={{ background: "linear-gradient(135deg, #f2682c 0%, #f59e0b 100%)" }}
+                className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl font-extrabold text-xs uppercase tracking-wider text-black transition-all duration-300 hover:scale-[1.02] shadow-xl shadow-[#EEAA55]/20 cursor-pointer"
+                style={{ background: "linear-gradient(135deg, #EEAA55 0%, #EEAA55 100%)" }}
               >
                 <Send className="w-4 h-4" />
                 <span>Kirim Hasil Simulasi ke WhatsApp</span>
@@ -1618,11 +1618,11 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
         className="fixed bottom-6 right-6 z-40 inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-white/15 shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer backdrop-blur-xl"
         style={{
           background: "rgba(24,19,14,0.95)",
-          color: "#f59e0b",
-          boxShadow: "0 10px 30px rgba(0,0,0,0.5), 0 0 15px rgba(242,104,44,0.2)",
+          color: "#EEAA55",
+          boxShadow: "0 10px 30px rgba(0,0,0,0.5), 0 0 15px rgba(238,170,85,0.2)",
         }}
       >
-        <History className="w-4 h-4 text-[#f2682c]" />
+        <History className="w-4 h-4 text-[#EEAA55]" />
         <span className="text-xs font-bold text-white">
           Riwayat ({savedSimulations.length})
         </span>
@@ -1634,13 +1634,13 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
           <div
             className="w-full max-w-lg rounded-2xl border p-6 space-y-4 shadow-2xl relative"
             style={{
-              background: "#14100c",
-              borderColor: "rgba(242,104,44,0.30)",
+              background: "#2b2b2b",
+              borderColor: "rgba(238,170,85,0.30)",
             }}
           >
             <div className="flex items-center justify-between pb-3 border-b border-white/10">
               <div className="flex items-center gap-2">
-                <History className="w-5 h-5 text-[#f2682c]" />
+                <History className="w-5 h-5 text-[#EEAA55]" />
                 <h4 className="text-base font-bold text-white">Riwayat Estimasi Disimpan</h4>
               </div>
               <button
@@ -1670,7 +1670,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       <div className="text-[10px] text-zinc-500 mt-0.5">{item.date}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-xs font-bold text-[#f59e0b] font-mono-num">
+                      <div className="text-xs font-bold text-[#EEAA55] font-mono-num">
                         {formatRp(item.total)}
                       </div>
                       <div className="text-[10px] text-zinc-400">{item.itemCount} item aktif</div>
@@ -1715,14 +1715,14 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
           <div
             className="w-full max-w-2xl rounded-2xl border p-6 sm:p-8 space-y-6 shadow-2xl relative my-8"
             style={{
-              background: "#181410",
-              borderColor: "rgba(242,104,44,0.40)",
+              background: "#3f3f3f",
+              borderColor: "rgba(238,170,85,0.40)",
             }}
           >
             {/* Modal Header */}
             <div className="flex items-center justify-between pb-4 border-b border-white/10">
               <div className="flex items-center gap-2">
-                <FileText className="w-5 h-5 text-[#f2682c]" />
+                <FileText className="w-5 h-5 text-[#EEAA55]" />
                 <h4 className="text-base font-bold text-white">
                   Pratinjau Dokumen Estimasi Interior (RAB)
                 </h4>
@@ -1744,7 +1744,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               <div className="flex justify-between items-start pb-4 border-b border-white/10">
                 <div>
                   <div className="text-lg font-black text-white tracking-wider">
-                    YUREE <span className="text-[#f59e0b]">PROJECT</span>
+                    YUREE <span className="text-[#EEAA55]">PROJECT</span>
                   </div>
                   <div className="text-[11px] text-zinc-400 mt-0.5">
                     Interior Manufacturing &amp; Execution Partner
@@ -1754,7 +1754,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-xs font-bold text-[#f59e0b] uppercase font-mono-num">
+                  <div className="text-xs font-bold text-[#EEAA55] uppercase font-mono-num">
                     RAB ESTIMASI BIAYA
                   </div>
                   <div className="text-[10px] text-zinc-400 mt-0.5">
@@ -1829,7 +1829,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
                       <td colSpan={2} className="p-3 font-bold text-white text-right">
                         GRAND TOTAL PERKIRAAN:
                       </td>
-                      <td className="p-3 font-black text-[#f2682c] text-sm text-right font-mono-num">
+                      <td className="p-3 font-black text-[#EEAA55] text-sm text-right font-mono-num">
                         {formatRp(totalPrice)}
                       </td>
                     </tr>
@@ -1857,7 +1857,7 @@ Mohon info ketersediaan jadwal survei lokasi dan konsultasi teknisnya. Terima ka
               <button
                 type="button"
                 onClick={() => window.print()}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#f2682c] hover:bg-[#d97706] text-black font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#f2682c]/20"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#EEAA55] hover:bg-[#d99640] text-black font-extrabold text-xs uppercase tracking-wider transition-all duration-200 shadow-lg shadow-[#EEAA55]/20"
               >
                 <Printer className="w-4 h-4" />
                 <span>Cetak / Simpan PDF</span>

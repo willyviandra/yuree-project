@@ -16,7 +16,7 @@ import { Footer } from "@/components/Footer";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-[#09090b] text-[#f4f4f5]">
+    <main className="min-h-screen bg-[#343434] text-[#F9F9F9]">
       {/* 1. Sticky Glassmorphism Header */}
       <Navbar />
 

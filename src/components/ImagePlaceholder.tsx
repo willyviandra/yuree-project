@@ -46,7 +46,7 @@ export function ImagePlaceholder({
   return (
     <div
       onClick={onClick}
-      className={`relative w-full ${aspectClass} overflow-hidden rounded-xl bg-[#121216] border border-white/10 group ${
+      className={`relative w-full ${aspectClass} overflow-hidden rounded-xl bg-[#2b2b2b] border border-white/10 group ${
         onClick ? "cursor-pointer" : ""
       } ${className}`}
     >
@@ -71,7 +71,7 @@ export function ImagePlaceholder({
 
       {/* Fallback Clean Architectural Drafting Mockup (When image not yet replaced or loading) */}
       {(!hasRealImage || !imageLoaded) && (
-        <div className="absolute inset-0 flex flex-col justify-between p-4 bg-gradient-to-br from-[#121216] via-[#16161c] to-[#0d0d10] architectural-grid">
+        <div className="absolute inset-0 flex flex-col justify-between p-4 bg-gradient-to-br from-[#2b2b2b] via-[#2b2b2b] to-[#2b2b2b] architectural-grid">
           {/* Subtle Architectural Blueprint Corner Crosshairs */}
           <span className="absolute top-2 left-2 text-white/20 font-mono-num text-xs select-none">
             +
@@ -89,8 +89,8 @@ export function ImagePlaceholder({
           {/* Top Row: Category Badge & Status */}
           <div className="flex items-center justify-between gap-2 z-10">
             {category && (
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-semibold tracking-wider uppercase bg-[#f59e0b]/15 text-[#f59e0b] border border-[#f59e0b]/30">
-                <Compass className="w-3 h-3 text-[#f59e0b]" />
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[11px] font-semibold tracking-wider uppercase bg-[#EEAA55]/15 text-[#EEAA55] border border-[#EEAA55]/30">
+                <Compass className="w-3 h-3 text-[#EEAA55]" />
                 {category}
               </span>
             )}
@@ -101,7 +101,7 @@ export function ImagePlaceholder({
 
           {/* Center: Title & Architectural Compass Motif */}
           <div className="my-auto text-center px-4 py-2 z-10">
-            <div className="w-10 h-10 mx-auto mb-2 rounded-lg bg-zinc-800/60 border border-white/10 flex items-center justify-center text-zinc-400 group-hover:border-[#f59e0b]/40 group-hover:text-[#f59e0b] transition-colors">
+            <div className="w-10 h-10 mx-auto mb-2 rounded-lg bg-zinc-800/60 border border-white/10 flex items-center justify-center text-zinc-400 group-hover:border-[#EEAA55]/40 group-hover:text-[#EEAA55] transition-colors">
               <Camera className="w-5 h-5" />
             </div>
             {title && (
@@ -125,7 +125,7 @@ export function ImagePlaceholder({
             )}
             {assetPath && (
               <p className="font-mono-num text-[9.5px] text-zinc-500 truncate bg-black/50 px-1.5 py-0.5 rounded border border-white/5">
-                path: <span className="text-[#f59e0b]/80">{assetPath}</span>
+                path: <span className="text-[#EEAA55]/80">{assetPath}</span>
               </p>
             )}
           </div>
@@ -135,7 +135,7 @@ export function ImagePlaceholder({
       {/* Hover Zoom Icon Overlay */}
       {showZoomIcon && (
         <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none z-20">
-          <div className="p-3 rounded-full bg-[#f59e0b] text-black shadow-lg">
+          <div className="p-3 rounded-full bg-[#EEAA55] text-black shadow-lg">
             <Maximize2 className="w-5 h-5" />
           </div>
         </div>

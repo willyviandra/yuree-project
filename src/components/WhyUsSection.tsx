@@ -193,7 +193,7 @@ export function WhyUsSection() {
     <section
       id="keunggulan"
       ref={sectionRef}
-      className="relative py-20 lg:py-28 bg-[#09090b] overflow-hidden scroll-mt-20"
+      className="relative py-20 lg:py-28 bg-[#343434] overflow-hidden scroll-mt-20"
     >
       {/* Target anchor for why-us */}
       <div id="why-us" className="absolute -top-24" />
@@ -205,11 +205,11 @@ export function WhyUsSection() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden opacity-20">
         <div
           className="absolute -left-[10%] top-[-15%] h-[55vh] w-[55vh] rounded-full blur-[110px]"
-          style={{ background: "rgba(242,104,44,0.08)" }}
+          style={{ background: "rgba(238,170,85,0.08)" }}
         />
         <div
           className="absolute right-[-12%] top-[10%] h-[50vh] w-[50vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(245,158,11,0.06)" }}
+          style={{ background: "rgba(238,170,85,0.06)" }}
         />
       </div>
 
@@ -225,7 +225,7 @@ export function WhyUsSection() {
         >
           <h2 className="text-[2rem] font-extrabold leading-[1.08] tracking-tight md:text-[3rem] lg:text-[3.4rem] text-white">
             Mengapa Memilih{" "}
-            <em className="italic text-[#f2682c] font-serif not-italic">
+            <em className="italic text-[#EEAA55] font-serif not-italic">
               Yuree Project?
             </em>
           </h2>
@@ -260,7 +260,7 @@ export function WhyUsSection() {
                   isRightCol ? "md:border-l border-white/10" : ""
                 }`}
               >
-                <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-[#f2682c]/10 text-[#f2682c] border border-[#f2682c]/20">
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-[#EEAA55]/10 text-[#EEAA55] border border-[#EEAA55]/20">
                   <IconC className="size-5" />
                 </div>
                 <div className="min-w-0">

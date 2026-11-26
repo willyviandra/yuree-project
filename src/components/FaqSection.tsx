@@ -63,7 +63,7 @@ export function FaqSection() {
     <section
       id="faq"
       ref={sectionRef}
-      className="relative py-20 lg:py-28 bg-[#09090b] overflow-hidden scroll-mt-20 border-t border-white/5"
+      className="relative py-20 lg:py-28 bg-[#343434] overflow-hidden scroll-mt-20 border-t border-white/5"
     >
       {/* JSON-LD Schema for SEO */}
       <script
@@ -78,11 +78,11 @@ export function FaqSection() {
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden opacity-15">
         <div
           className="absolute right-[-10%] top-1/4 h-[50vh] w-[50vh] rounded-full blur-[130px]"
-          style={{ background: "rgba(242,104,44,0.08)" }}
+          style={{ background: "rgba(238,170,85,0.08)" }}
         />
         <div
           className="absolute left-[-10%] bottom-1/4 h-[45vh] w-[45vh] rounded-full blur-[120px]"
-          style={{ background: "rgba(245,158,11,0.06)" }}
+          style={{ background: "rgba(238,170,85,0.06)" }}
         />
       </div>
 
@@ -113,7 +113,7 @@ export function FaqSection() {
 
         {/* Right Column: Accordion Card matching reference */}
         <div
-          className="rounded-3xl border border-white/10 bg-[#121216]/90 px-6 shadow-2xl backdrop-blur-xl md:px-8 divide-y divide-white/10"
+          className="rounded-3xl border border-white/10 bg-[#2b2b2b]/90 px-6 shadow-2xl backdrop-blur-xl md:px-8 divide-y divide-white/10"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? "translateY(0)" : "translateY(28px)",
@@ -132,13 +132,13 @@ export function FaqSection() {
                   >
                     <span
                       className={`transition-colors ${
-                        isOpen ? "text-[#f2682c]" : "text-white hover:text-[#f2682c]"
+                        isOpen ? "text-[#EEAA55]" : "text-white hover:text-[#EEAA55]"
                       }`}
                     >
                       {faq.question}
                     </span>
                     <ChevronDownIcon
-                      className={`size-5 shrink-0 transition-transform duration-300 text-[#f2682c] ${
+                      className={`size-5 shrink-0 transition-transform duration-300 text-[#EEAA55] ${
                         isOpen ? "rotate-180" : "rotate-0"
                       }`}
                     />
